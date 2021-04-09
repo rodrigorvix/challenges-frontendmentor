@@ -1,0 +1,160 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    --light-gray: #e5eff5;
+    --grayish-blue: #98a6bd;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+    
+  }
+
+  #container-grid {
+   width: 335px;
+   height: 730px;
+   margin: 30px auto 30px;
+   border-radius: 5px;
+   box-shadow: 0 0 1px black;
+   display: grid;
+   grid-template-columns: 1;
+   grid-template-rows: 270px repeat(2, 1fr);
+   overflow: hidden;
+
+  }
+  .card-grid {
+    padding: 15px 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+    
+  }
+    .card-grid.join {
+    background-color: white;
+
+  }
+  .join-title {
+    color: var(--cyan);
+    font-size: 22px;
+  }
+  .join-subtitle {
+    color: var(--bright-yellow);
+    font-size: 16px;
+  }
+  .join-description {
+    color: var( --grayish-blue);
+    font-weight: 700;
+    line-height: 1.8;
+    opacity: .8;
+    font-size: 14px;
+    
+  }
+  .card-title {
+    color: var(--light-gray);
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .monthly {
+    background-color: var(--cyan);
+  
+  }
+  .monthly-price {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    line-height: .5;
+   
+  }
+  .monthly-price span {
+    font-size: 16px;
+    margin-left: 10px;
+    opacity: .4;
+  }
+  .monthly-description {
+    color: white;
+    margin-top: 0;
+    font-weight: 700;
+    opacity: .7;
+    margin-bottom: 10px;
+  }
+  .button-sign-up {
+    padding: 14px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rba(0,0,0,8);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    border-radius: 5px;
+    opacity: .9;
+    
+   
+  }
+  .button-sign-up:hover {
+    opacity: 1;
+    box-shadow: 0 0 10px rba(0,0,0,7);
+  }
+  .why-us {
+    background-color:var(--cyan);
+    opacity: .7;
+  }
+  .why-us-description {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: .8;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .attribution {
+    margin-top: 80px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    
+  }
+  .attribution a:hover {
+    color: hsl(228, 79%, 62%);
+  }
+
+  @media(min-width:700px) {
+   
+    #container-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 205px 1fr;
+      width: 630px;
+      height: 460px;
+     
+    }
+    .card-grid{
+     padding: 30px 40px;
+    }
+    
+    .card-grid.join {
+      grid-column: 1 /-1;
+      padding: 30px 50px;
+    }
+    .monthly-description {
+      font-size: 14px;
+    }
+  }
+ 
