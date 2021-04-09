@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![single-price-component-desktop](https://user-images.githubusercontent.com/80417182/114239858-003df200-995d-11eb-865d-682a19e48291.png)
+![single-price-component-desktop](https://user-images.githubusercontent.com/80417182/114239858-003df200-995d-11eb-865d-682a19e48291.png) ![single-price-component-mobile](https://user-images.githubusercontent.com/80417182/114239888-09c75a00-995d-11eb-96db-5f18ad56888c.png)
 
-![single-price-component-mobile](https://user-images.githubusercontent.com/80417182/114239888-09c75a00-995d-11eb-96db-5f18ad56888c.png)
+
 
 
 ### Links
