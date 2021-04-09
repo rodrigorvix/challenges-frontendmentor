@@ -1,4 +1,5 @@
-# challenges-frontendmentor
+# Challenges Frontend Mentor
+
  A repository to store my solutions from Frontend Mentor challenges.
 
 # Link for Projects
