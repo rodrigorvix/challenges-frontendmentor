@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://xxx)
+- Solution URL: [Single Price Grid Component](https://rodrigorvix.github.io/challenges-frontendmentor/single-price-grid-component/)
 
 ## My process
 
