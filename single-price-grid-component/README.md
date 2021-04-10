@@ -12,6 +12,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -25,7 +26,6 @@ Users should be able to:
 ### Screenshot
 
 ![single-price-component-desktop](https://user-images.githubusercontent.com/80417182/114239858-003df200-995d-11eb-865d-682a19e48291.png) 
-
 
 ### Links
 
@@ -46,9 +46,12 @@ Users should be able to:
 
 In this challenge i tried to practice using CSS Grid and Flexbox.
 
+## Author
+
+- Frontend Mentor - [@rodrigorvix](https://www.frontendmentor.io/profile/rodrigorvix)
 
 ## Acknowledgments
 
-Thanks to the Frontend Mentor](https://www.frontendmentor.io/) for making the design available for the challenge
+Thanks to the Frontend Mentor(https://www.frontendmentor.io/) for making the design available for the challenge.
 
 
