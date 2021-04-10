@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://xxx)
+- Solution URL: [Four Card Feature Section](https://rodrigorvix.github.io/challenges-frontendmentor/four-card-feature-section/)
 
 ## My process
 
