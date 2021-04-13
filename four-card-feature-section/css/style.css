@@ -138,7 +138,7 @@
     color: hsl(228, 79%, 62%);
   }
 
-  @media (min-width: 400px) {
+  @media (min-width: 420px) {
 
     .header-page {
       padding: 0 3em;
@@ -180,6 +180,7 @@
     .main-cards {
       grid-template-columns: 2;
       grid-template-rows: 4;
+
     }
 
     .supervisor {
