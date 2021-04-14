@@ -17,60 +17,59 @@ body {
     background-image: url(../images/bg-mobile.svg);
     background-color: var(--violet);
     background-repeat: no-repeat;
-    background-size: cover;
-   
+    background-size: contain; 
+    background-position: center top;
     
 }
+
 #container {
-    width: 85vw;
-    height: 100vw;
+    width: 78vw;
     margin: auto;
 }
 
 .header-logo {
    
-    height: 5vh;
-    margin: 3em 0 5em;
-    
+    height: 30px;
+    margin: 3em 0 6.8em;  
 }
 .header-logo img {
   max-height: 100%;;
  
 }
 .main-container {
-    
     width: 100%;
-    height: 70vh;
-    border: solid .1em red;
+}
+.main-illustration {
+    margin-bottom: 60px;
+    
 }
 .main-illustration img{
     max-width: 100%;
-    margin-bottom: 2em;
+    ;
 }
 .main-content {
     
     text-align: center;
-
 }
 .main-content-title, .main-content-subtitle {
-    font-size:2.4em;
+    font-size:2.2em;
     font-weight: 600;
     color: white;
-    line-height: .8;
+    line-height: .6;
 }
 .main-content-description {
-    margin-top: 1.5em;
-    font-size: 1.6em;
+    margin-top: 15px;
+    font-size: 1.4em;
     font-weight: 400;
     color: white;
-    line-height: 1.5;
-    padding: 0 2.625em;
+    line-height: 1.4;
+    padding:0 4px;
 }
 .button {
     display: block;
-    width: 250px;
-    margin: 20px auto;
-    font-size: 1.5em;
+    width: 180px;
+    margin: 15px auto;
+    font-size: 1.2em;
     text-decoration: none;
     padding:15px 50px;
     background-color: white;
@@ -78,3 +77,64 @@ body {
     color: var(--violet);
     
 }
+.footer-container {
+    margin-top: 20px;
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 10px;
+}
+.fab {
+    display: inline-block;
+    color: white;
+    border-radius: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.attribution {
+    margin-top: 5em;
+    font-size: .7em;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+  .attribution a {
+    color: black
+  }
+
+  @media(min-width: 420px) {
+    .header-logo {
+   
+        height: 40px;
+        margin: 3em 0 8.5em;  
+    }
+    .main-content-title, .main-content-subtitle {
+        font-size:3em;
+    }
+
+    .main-content-description {
+        margin-top: 20px;
+        font-size: 1.6em;
+        padding: 0 26px;
+    }
+
+    .button {
+        width: 230px;
+        margin: 20px auto;
+        font-size: 1.6em;
+    }
+    .footer-container {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    .fab {
+        width: 40px; 
+        margin-bottom: 20px;
+    }
+  }
+  @media(min-width:1400px){
+
+  
+  }
+  
