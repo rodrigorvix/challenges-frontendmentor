@@ -1,0 +1,79 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-mobile.svg);
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+#container {
+    width: 85vw;
+    height: 100vw;
+    margin: auto;
+}
+
+.header-logo {
+   
+    height: 5vh;
+    margin: 3em 0 5em;
+    
+}
+.header-logo img {
+  max-height: 100%;;
+ 
+}
+.main-container {
+    
+    width: 100%;
+    height: 70vh;
+    border: solid .1em red;
+}
+.main-illustration img{
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+.main-content {
+    
+    text-align: center;
+
+}
+.main-content-title, .main-content-subtitle {
+    font-size:2.4em;
+    font-weight: 600;
+    color: white;
+    line-height: .8;
+}
+.main-content-description {
+    margin-top: 1.5em;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+    padding: 0 2.625em;
+}
+.button {
+    display: block;
+    width: 100px;
+    margin-top: 15px;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    
+}
