@@ -20,6 +20,7 @@ body {
     background-size: contain; 
     background-position: center top;
     
+    
 }
 
 #container {
@@ -84,6 +85,7 @@ body {
     font-size: 10px;
 }
 .fab {
+    width: 32px;
     display: inline-block;
     color: white;
     border-radius: 100%;
@@ -136,11 +138,45 @@ body {
 
     body {
         background-image: url(../images/bg-desktop.svg);
-        background-position: left bottom;
-        background-size: contain;
-          
+        background-attachment: fixed;  
+        background-position: left center;
     }
-    
+    #container {
+        width: 85vw;
+    }
+    .header-logo {
+        height: 50px;
+        margin-bottom: 120px;
+    }
+    .main-container {
+        width: 100%;
+        display: flex;
+        border: 1px solid red;
+    }
+    .main-illustration {
+        border: springgreen 1px solid;
+        margin-bottom: 0;
+    }
+    .main-illustration img {
+        max-width: none;
+        min-width: 100%;
+    }
+  
+    .main-content {
+        text-align: justify;
+        padding: 30px 60px;
+        border: 1px solid yellow;
+    }
+    .main-content-title, .main-content-subtitle {
+        line-height: 1;
+        font-size: 4em;
+    }
+    .main-content-description {
+        padding-left: 0;
+       margin-top: 40px;
+        line-height: 1.5;
+        font-size: 2.4em;
+    }
     
     .button {
         margin-top: 40px;
