@@ -29,7 +29,7 @@ body {
 
 .header-logo {
    
-    height: 30px;
+    height: 4.5vh;
     margin: 3em 0 6.8em;  
 }
 .header-logo img {
@@ -45,7 +45,7 @@ body {
 }
 .main-illustration img{
     max-width: 100%;
-    ;
+    
 }
 .main-content {
     
@@ -66,12 +66,12 @@ body {
     padding:0 4px;
 }
 .button {
-    display: block;
-    width: 180px;
-    margin: 15px auto;
+    display: inline-block;
+    text-align: center;
+    margin: 15px auto 0;
     font-size: 1.2em;
     text-decoration: none;
-    padding:15px 50px;
+    padding:15px 70px;
     background-color: white;
     border-radius: 50px;
     color: var(--violet);
@@ -104,10 +104,9 @@ body {
   }
 
   @media(min-width: 420px) {
+
     .header-logo {
-   
-        height: 40px;
-        margin: 3em 0 8.5em;  
+        margin: 3em 0 9em;  
     }
     .main-content-title, .main-content-subtitle {
         font-size:3em;
@@ -116,16 +115,16 @@ body {
     .main-content-description {
         margin-top: 20px;
         font-size: 1.6em;
-        padding: 0 26px;
+        padding: 0 30px;
     }
 
     .button {
-        width: 230px;
-        margin: 20px auto;
+       margin-top: 30px;
         font-size: 1.6em;
+        padding:15px 90px;
     }
     .footer-container {
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 15px;
     }
     .fab {
@@ -133,8 +132,40 @@ body {
         margin-bottom: 20px;
     }
   }
-  @media(min-width:1400px){
+  @media(min-width:1440px){
 
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-position: left bottom;
+        background-size: contain;
+    }
+
+    .main-container {
+        display: flex;
+    }
+    .main-illustration {
+        min-width: 60%;
+    }
+    .main-content {
+        min-width: 40%;
+        text-align: left;
+    }
+    .main-content-title, .main-content-subtitle {
+        font-size:3.6em;
+        font-weight: 600;
+        color: white;
+        line-height: .8;
+    }
+    .main-content-description {
+        margin-top: 40px;
+        padding: 0;
+        font-size: 1.8em;
+    }
+    .button {
+        margin-top: 40px;
+        font-size: 2em;
+        padding:20px 70px;
+    }
   
   }
   
