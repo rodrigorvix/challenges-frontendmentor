@@ -138,34 +138,21 @@ body {
         background-image: url(../images/bg-desktop.svg);
         background-position: left bottom;
         background-size: contain;
+          
     }
-
+    #container {
+        width: 90%;
+    }
     .main-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .main-illustration {
-        min-width: 60%;
-    }
-    .main-content {
-        min-width: 40%;
-        text-align: left;
-    }
-    .main-content-title, .main-content-subtitle {
-        font-size:3.6em;
-        font-weight: 600;
-        color: white;
-        line-height: .8;
-    }
-    .main-content-description {
-        margin-top: 40px;
-        padding: 0;
-        font-size: 1.8em;
-    }
+    
     .button {
         margin-top: 40px;
         font-size: 2em;
         padding:20px 70px;
     }
-  
+   
   }
   
