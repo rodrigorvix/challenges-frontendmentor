@@ -149,7 +149,7 @@ body {
         margin-bottom: 120px;
     }
     .main-container {
-        width: 100%;
+        width: 90%;
         display: flex;
         border: 1px solid red;
     }
@@ -159,7 +159,6 @@ body {
     }
     .main-illustration img {
         max-width: none;
-        min-width: 100%;
     }
   
     .main-content {
@@ -168,14 +167,14 @@ body {
         border: 1px solid yellow;
     }
     .main-content-title, .main-content-subtitle {
-        line-height: 1;
+        line-height: .7;
         font-size: 4em;
     }
     .main-content-description {
         padding-left: 0;
        margin-top: 40px;
         line-height: 1.5;
-        font-size: 2.4em;
+        font-size: 1.8em;
     }
     
     .button {
