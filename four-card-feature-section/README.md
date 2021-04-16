@@ -24,6 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
+![four-cards-page](https://user-images.githubusercontent.com/80417182/115083678-24aa4900-9ede-11eb-94e3-7768a935b37f.png)
+
 
 ### Links
 
