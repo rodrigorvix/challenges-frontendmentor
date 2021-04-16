@@ -165,7 +165,7 @@ body {
     .header-logo {
         height: 50px;
         margin-top: 50px;
-        margin-bottom: 90px;
+        margin-bottom: 110px;
     }
     .main-container {
         width: 100%;
@@ -177,7 +177,7 @@ body {
     }
     .main-illustration img {
         max-width: none;
-        min-height: 580px;
+        min-height: 540px;
     }
   
     .main-content {
