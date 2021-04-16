@@ -34,7 +34,7 @@ body {
     margin: 3em 0 6.8em;  
 }
 .header-logo img {
-  max-height: 100%;;
+    max-height: 100%;;
  
 }
 .main-container {
@@ -59,7 +59,6 @@ body {
     line-height: .6;
 }
 .main-content-description {
-    /* margin-top: 15px; */
     margin-top: 1.071em;
     font-size: 1.4em;
     font-weight: 400;
@@ -137,7 +136,7 @@ body {
     }
 
     .button {
-       margin-top: 1.875em;
+        margin-top: 1.875em;
         font-size: 1.6em;
         padding:.9375em 5.625em;
     }
@@ -205,8 +204,8 @@ body {
         margin-top: 0.667em;
     }
     .social-medias {
-    margin-right: 10.416em;
-    text-align: end;
+        margin-right: 10.416em;
+        text-align: end;
 }   
 
   }
