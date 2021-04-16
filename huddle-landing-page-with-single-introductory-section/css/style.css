@@ -41,7 +41,7 @@ body {
     width: 100%;
 }
 .main-illustration {
-    margin-bottom: 60px;
+    margin-bottom: 6em;
     
 }
 .main-illustration img{
@@ -59,20 +59,21 @@ body {
     line-height: .6;
 }
 .main-content-description {
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    margin-top: 1.071em;
     font-size: 1.4em;
     font-weight: 400;
     color: white;
     line-height: 1.4;
-    padding:0 4px;
+    padding:0 .285em;
 }
 .button {
     display: inline-block;
     text-align: center;
-    margin: 15px auto 0;
+    margin: 1.25em auto 0;
     font-size: 1.2em;
     text-decoration: none;
-    padding:15px 70px;
+    padding:1.25em 5.84em;
     background-color: white;
     border-radius: 50px;
     box-shadow: 1px 1px 5px black;
@@ -84,11 +85,11 @@ body {
     color: white;
 }
 .social-medias {
-    margin-top: 20px;
+    margin-top: 1.25em;
     text-align: center;
-    word-spacing: 10px;
-    font-size: 16px;
-    font-weight: 600;
+    word-spacing: 0.625em;
+    font-size: 1.6em;
+    font-weight: 400;
 }
 .fab {
     width: 30px;
@@ -130,19 +131,19 @@ body {
     }
 
     .main-content-description {
-        margin-top: 20px;
+        margin-top: 1.25em;
         font-size: 1.6em;
-        padding: 0 30px;
+        padding: 0 1.875em;
     }
 
     .button {
-       margin-top: 30px;
+       margin-top: 1.875em;
         font-size: 1.6em;
-        padding:15px 90px;
+        padding:.9375em 5.625em;
     }
     .footer-container {
-        margin-top: 40px;
-        font-size: 15px;
+        margin-top: 2.67em;
+        font-size: 1.5em;
     }
     .fab {
         width: 40px;
@@ -164,7 +165,7 @@ body {
     }
     .header-logo {
         height: 60px;
-        margin-bottom: 120px;
+        margin-bottom: 110px;
     }
     .main-container {
         width: 100%;
@@ -181,7 +182,7 @@ body {
   
     .main-content {
         text-align: left;
-        padding: 40px 80px;
+        padding: 4em 8em;
         width: 44%;
     }
     .main-content-title, .main-content-subtitle {
@@ -190,21 +191,21 @@ body {
     }
     .main-content-description {
         padding-left: 0;
-        margin-top: 40px;
+        margin-top: 2.22em;
         line-height: 1.5;
         font-size: 1.8em;
     }
     
     .button {
-        margin-top: 40px;
+        margin-top: 2em;
         font-size: 2em;
-        padding:20px 70px;
+        padding:1em 3.5em;
     }
     .footer-container {
-        margin-top: 10px;
+        margin-top: 0.667em;
     }
     .social-medias {
-    margin-right: 250px;
+    margin-right: 10.416em;
     text-align: end;
 }   
 
