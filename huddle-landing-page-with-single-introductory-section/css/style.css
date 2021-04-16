@@ -75,23 +75,34 @@ body {
     padding:15px 70px;
     background-color: white;
     border-radius: 50px;
+    box-shadow: 1px 1px 5px black;
     color: var(--violet);
     
 }
-.footer-container {
+.button:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+.social-medias {
     margin-top: 20px;
     text-align: center;
     word-spacing: 10px;
-    font-size: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
 .fab {
-    width: 32px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
     color: white;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 1px solid white;
-    padding: 10px;
-    margin-bottom: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.fab:hover {
+    color: var(--soft-magenta);
+    border-color: var(--soft-magenta) ;
 }
 
 .attribution {
@@ -102,7 +113,11 @@ body {
     color: white;
   }
   .attribution a {
-    color: black
+    color: black;
+    opacity: .7;
+  }
+  .attribution a:hover {
+      opacity: 1;
   }
 
   @media(min-width: 420px) {
@@ -130,8 +145,9 @@ body {
         font-size: 15px;
     }
     .fab {
-        width: 40px; 
-        margin-bottom: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px; 
     }
   }
   @media(min-width:1440px){
@@ -140,39 +156,41 @@ body {
         background-image: url(../images/bg-desktop.svg);
         background-attachment: fixed;  
         background-position: left center;
+        background-size: contain;
     }
     #container {
-        width: 85vw;
+        width: 90vw;
+        height: 100vh;
     }
     .header-logo {
-        height: 50px;
+        height: 60px;
         margin-bottom: 120px;
     }
     .main-container {
-        width: 90%;
+        width: 100%;
         display: flex;
-        border: 1px solid red;
     }
     .main-illustration {
-        border: springgreen 1px solid;
         margin-bottom: 0;
+       
     }
     .main-illustration img {
         max-width: none;
+        min-height: 580px;
     }
   
     .main-content {
-        text-align: justify;
-        padding: 30px 60px;
-        border: 1px solid yellow;
+        text-align: left;
+        padding: 40px 80px;
+        width: 44%;
     }
     .main-content-title, .main-content-subtitle {
-        line-height: .7;
+        line-height: .9;
         font-size: 4em;
     }
     .main-content-description {
         padding-left: 0;
-       margin-top: 40px;
+        margin-top: 40px;
         line-height: 1.5;
         font-size: 1.8em;
     }
@@ -182,6 +200,13 @@ body {
         font-size: 2em;
         padding:20px 70px;
     }
-   
+    .footer-container {
+        margin-top: 10px;
+    }
+    .social-medias {
+    margin-right: 250px;
+    text-align: end;
+}   
+
   }
   
