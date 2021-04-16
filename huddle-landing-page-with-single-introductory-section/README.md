@@ -24,6 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
+![huddle-page](https://user-images.githubusercontent.com/80417182/115083586-fdec1280-9edd-11eb-8640-034631ed4aeb.png)
+
 
 ### Links
 
