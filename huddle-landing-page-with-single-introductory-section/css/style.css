@@ -28,7 +28,7 @@ h2{
 }
 
 #container {
-    /* width: 78vw; */
+   
     width: 80%;
     margin: auto;
 }
@@ -46,7 +46,7 @@ h2{
     width: 100%;
 }
 .main-illustration {
-    margin-bottom: 6em;
+    margin-bottom: 5em;
     
 }
 .main-illustration img{
@@ -65,11 +65,11 @@ h2{
 }
 .main-content-description {
     margin-top: 1.071em;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 400;
     color: white;
     line-height: 1.4;
-    padding:0 .285em;
+    padding: 0 .600em;
     opacity: .8;
 }
 .button {
@@ -131,6 +131,10 @@ h2{
     .header-logo {
         margin: 3em 0 9em;  
     }
+    .main-illustration {
+        margin-bottom: 7em;
+        
+    }
     .main-content-title, .main-content-subtitle {
         font-size:3em;
     }
@@ -138,7 +142,7 @@ h2{
     .main-content-description {
         margin-top: 1.25em;
         font-size: 1.6em;
-        padding: 0 1.875em;
+        padding: 0 2.5em;
     }
 
     .button {
