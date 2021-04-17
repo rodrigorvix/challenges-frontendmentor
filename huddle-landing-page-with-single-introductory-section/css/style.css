@@ -13,13 +13,18 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url(../images/bg-mobile.svg);
     background-color: var(--violet);
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: center top;
   
+}
+h1,
+h2{
+    
+    font-family: 'Poppins', sans-serif;
 }
 
 #container {
@@ -65,6 +70,7 @@ body {
     color: white;
     line-height: 1.4;
     padding:0 .285em;
+    opacity: .8;
 }
 .button {
     display: inline-block;
@@ -193,7 +199,7 @@ body {
         padding-right: 0;
         margin-top: 2.22em;
         line-height: 1.5;
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     .button {
         margin-top: 2em;
@@ -254,7 +260,7 @@ body {
         font-size: 4em;
     }
     .main-content-description {
-        font-size: 1.8em;
+        font-size: 2em;
     }
     
     .button {
