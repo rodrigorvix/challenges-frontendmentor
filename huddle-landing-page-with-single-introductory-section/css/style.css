@@ -19,12 +19,12 @@ body {
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: center top;
-    
-    
+  
 }
 
 #container {
-    width: 78vw;
+    /* width: 78vw; */
+    width: 80%;
     margin: auto;
 }
 
@@ -150,64 +150,128 @@ body {
         line-height: 40px; 
     }
   }
-  @media(min-width:1440px){
 
+
+  @media(min-width:1200px) {
     body {
         background-image: url(../images/bg-desktop.svg);
-        background-attachment: fixed;  
         background-position: left center;
         background-size: contain;
+        background-repeat: no-repeat;
     }
     #container {
-        width: 90vw;
-        height: 100vh;
+        width: 90%;
     }
     .header-logo {
         height: 50px;
-        margin-top: 50px;
-        margin-bottom: 110px;
+        margin-top: 45px;
+        margin-bottom: 90px;
     }
-    .main-container {
-        width: 100%;
+    .main-container { 
         display: flex;
+        height: 65vh;
     }
+    
     .main-illustration {
+        
         margin-bottom: 0;
-       
     }
     .main-illustration img {
         max-width: none;
-        min-height: 580px;
+        height: 525px;
     }
-  
     .main-content {
         text-align: left;
-        padding: 4em 8em;
-        width: 44%;
+        padding: 4em 0 4em 4em;
     }
     .main-content-title, .main-content-subtitle {
         line-height: .9;
-        font-size: 4em;
+        font-size: 3.2em;
     }
     .main-content-description {
         padding-left: 0;
+        padding-right: 0;
         margin-top: 2.22em;
         line-height: 1.5;
+        font-size: 1.5em;
+    }
+    .button {
+        margin-top: 2em;
+        font-size: 1.7em;
+        padding:1em 3.5em;
+    }
+
+    .footer-container {
+        margin-top: 5em;
+        font-size: 1em; 
+    }
+    .social-medias {
+        text-align: end;
+}   
+    .fab {
+    width: 30px;
+    height: 30px;
+    line-height: 30px; 
+    }
+   
+  }
+  @media(min-width: 1400px) {
+
+    .header-logo {
+     
+        margin-bottom: 11em;
+    }
+    .main-illustration img {
+        max-width: none;
+        height: 560px;
+    }
+    .main-content {
+        padding: 4em 0em 4em 4em;
+        
+    }
+    .main-content-title, .main-content-subtitle {
+        line-height: .9;
+        font-size: 3.6em;
+    }
+    .main-content-description {
+        font-size: 1.5em;
+    }
+    
+
+  }
+
+  @media(min-width: 1680px) {
+    
+    .main-container {
+        height: 62vh;
+        padding-right: 30em;
+    }
+
+    .main-illustration img {
+        height: 580px;
+    }
+    .main-content-title, .main-content-subtitle {
+        font-size: 4em;
+    }
+    .main-content-description {
         font-size: 1.8em;
     }
     
     .button {
-        margin-top: 2em;
         font-size: 2em;
-        padding:1em 3.5em;
     }
+    
     .footer-container {
-        margin-top: 0.667em;
+        margin-top: 2.67em;
+        font-size: 1.5em;
+    }
+    .fab {
+        width: 40px;
+        height: 40px;
+        line-height: 40px; 
     }
     .social-medias {
-        margin-right: 10.416em;
-        text-align: end;
-}   
-
+        margin-right: 11em;
+       
+    }   
   }
-  
