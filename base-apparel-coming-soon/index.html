@@ -1,33 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>By Rodrigorvix Frontend Mentor | Base Apparel coming soon page</title>
+
 </head>
+
 <body>
+  <div class="container">
 
-  We're coming soon
+    <header class="header-container align">
+      <div class="header-logo">
+        <img src="./images/logo.svg" alt="Logo base apparel">
+      </div>
+    </header>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <main class="main-container">
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <picture class="main-hero">
+        <source class="main-hero-mobile" media="(max-width: 768px)" srcset="./images/hero-mobile.jpg" alt="Image hero">
+        <source class="main-hero-desktop" srcset="./images/hero-desktop.jpg" alt="Image hero">
+        <img src="./images/hero-mobile.jpg" alt="Image hero">
+      </picture>
+
+      <section class="section-container align">
+
+        <h1 class="section-title">
+          <span>We're</span>
+          <span>coming</span>
+          <span>soon</span>
+        </h1>
+
+        <p class="section-content">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form class="section-form" action="#">
+          <label class="section-label" for="email">Email:</label>
+          <input class="section-input" type="email" name="email" id="email" placeholder=" Email Address">
+          <button class="section-button" type="submit">
+            <img class="section-button-icon" src="./images/icon-arrow.svg" alt="icon arrow">
+          </button>
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer class="footer-container">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </div>
+
 </body>
+
 </html>
