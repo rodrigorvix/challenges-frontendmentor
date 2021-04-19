@@ -20,7 +20,7 @@ body{
     
 }
 .header-container {
-    margin: 20px;
+    margin: 2em;
 }
 .header-logo img{
     display: block;
@@ -28,12 +28,12 @@ body{
 }
 .main-hero img {
     width: 100%;
-    height: auto;
+    height: 30vh;
 }
 .section-container {
-    width: 90%;
-   margin: auto;
-   position: relative;
+    width: 80%;
+    margin: auto;
+    position: relative;
 }
 .section-title {
     display: flex;
@@ -51,7 +51,7 @@ span:first-child {
 }
 .section-content {
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 400;
     color:var(--desaturated-red);
     opacity: .8;
@@ -61,15 +61,17 @@ span:first-child {
     position: relative;
     display: inline-flex;
     width: 100%;
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    
 }
 .section-input{
     border-radius: 1.5em;
-    padding: 1em;
+    padding: .8em;
     font-size: 1.6em;
     outline: none;
-    border: 1px solid var(--desaturated-red);background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    border: 1px solid var(--desaturated-red);
     width: 100%;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+   
 }
 .section-input::placeholder {
     color: var(--desaturated-red);
@@ -80,14 +82,17 @@ span:first-child {
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     border-radius: 2em;
     font-size: 1.4em;
-    padding: 1em 2em;
+    height: auto;
+    width: 60px;
+    
     border: none;
 }
 
 .attribution {
-    margin-top: 5em;
+    margin-top: 6em;
     font-size: 1em;
     font-weight: 700;
     text-align: center;
@@ -107,3 +112,27 @@ span:first-child {
     left: -9999px;
   }
 
+  @media (min-width:420px) {
+    
+    .header-container {
+        margin: 3em;
+    }
+    .section-container {
+        width: 70%;
+        margin: 5em auto;
+    }
+    .section-title {
+        font-size: 4em;
+    }
+    .section-content {
+        font-size: 1.6em;
+        
+    }
+  }
+
+  @media (min-width:720px) {
+    .main-hero img {
+        width: 100%;
+        height: 40vh;
+    }
+  }
