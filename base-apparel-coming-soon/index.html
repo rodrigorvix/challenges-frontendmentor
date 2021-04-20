@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./css/normalize.css">
@@ -18,56 +18,57 @@
 </head>
 
 <body>
-  <div id="container">
+  
 
-    <header class="header-container ">
-      <div class="header-logo">
-        <img src="./images/logo.svg" alt="Logo base apparel">
-      </div>
-    </header>
+    <main id="main-container">
 
-    <main class="main-container">
-      
-     
-        <picture class="main-hero">
-          <source class="main-hero-mobile" media="(max-width: 720px)" srcset="./images/hero-mobile.jpg" alt="Image hero">
-          <source class="main-hero-desktop" srcset="./images/hero-desktop.jpg" alt="Image hero">
+      <header class="header-container ">
+        <div class="header-logo">
+          <img src="./images/logo.svg" alt="Logo base apparel">
+        </div>
+      </header>
+
+      <section class="section-hero">
+        <picture class="section-hero">
+          <source class="section-hero-mobile" media="(max-width: 720px)" srcset="./images/hero-mobile.jpg"
+            alt="Image hero">
+          <source class="section-hero-desktop" srcset="./images/hero-desktop.jpg" alt="Image hero">
           <img src="./images/hero-mobile.jpg" alt="Image hero">
         </picture>
-    
-     
-      <section class="section-container">
+      </section>
 
-        <h1 class="section-title">
+      <section class="section-content">
+
+        <h1 class="section-content-title">
           <span>We're</span>
           <span>coming</span>
           <span>soon</span>
         </h1>
 
-        <p class="section-content">
+        <p class="section-content-description">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
 
-        <form class="section-form" action="#">
+        <form class="section-content-form" action="#">
           <label class="screen-reader-text" for="email">Email:</label>
           <input class="section-input" type="email" name="email" id="email" placeholder=" Email Address">
           <button class="section-button" type="submit">
-            <img class="section-button-icon" src="./images/icon-arrow.svg" alt="icon arrow">
+            <img src="./images/icon-arrow.svg" alt="icon arrow">
           </button>
         </form>
 
       </section>
 
+      <footer class="footer-container">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Rodrigorvix</a>.
+        </p>
+      </footer>
+
     </main>
 
-    <footer class="footer-container">
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Rodrigorvix</a>.
-      </p>
-    </footer>
-  </div>
 
 </body>
 
