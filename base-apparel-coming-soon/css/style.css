@@ -132,7 +132,11 @@ span:first-child {
 
   @media (min-width:720px) {
     .main-hero img {
-        width: 100%;
-        height: 40vh;
+        
+        height: 50vh;
     }
   }
+  @media(min-width: 1200px) {
+      
+      
+    }
