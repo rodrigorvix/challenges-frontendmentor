@@ -68,14 +68,31 @@ span:first-child {
     padding: .8em;
     font-size: 1.6em;
     outline: none;
-    border: 1px solid var(--desaturated-red);
+    border: none;
+    box-shadow: 0px 0px 2px var(--dark-grayish-red);
     width: 100%;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-   
+}
+.section-input:focus {
+    border: 2px solid var(--soft-red);
+}
+.input-icon-error {
+    position: absolute;
+    top: 10px;
+    right: 90px;
+    bottom: 0;
+    visibility: hidden;
+}
+.input-message-error {
+    color:var(--soft-red);
+    font-size: 1.4em;
+    margin-left: 20px;
+    visibility: hidden;
 }
 .section-input::placeholder {
     color: var(--desaturated-red);
-    font-size: .8em;
+    font-size: 1em;
+    opacity: .5;
 }
 .section-button {
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -90,6 +107,15 @@ span:first-child {
     
     border: none;
 }
+.section-button:hover {
+    cursor: pointer;
+}
+.section-button-active {
+    outline: none;
+    transform: translateX(10px);
+    background: hsl(0, 75%, 92%);
+}
+
 
 .attribution {
     margin-top: 6em;
@@ -129,6 +155,10 @@ span:first-child {
         font-size: 1.6em;
         
     }
+    .section-button {
+        width: 80px;
+      }
+    
   }
 
   @media (min-width:720px) {
@@ -136,17 +166,16 @@ span:first-child {
         
         height: 60vh;
     }
+    
   }
   @media(min-width: 1200px) {
 
-    body {
-        background-image: url(./../images/bg-pattern-desktop.svg);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: contain;
-    }
-
       #main-container {
+          background-image: url(./../images/bg-pattern-desktop.svg);
+          background-position: left bottom;
+          background-repeat: no-repeat;
+          background-size:contain;
+
           display: grid;
           grid-template-areas: "header hero"
                                 "content hero"
@@ -182,11 +211,16 @@ span:first-child {
           font-size: 1.4em;
           margin-bottom: 20px;
       }
-
+      .section-input {
+          padding: 1em;
+      }
+      .input-icon-error {
+        top: 15px;
+    }
+      
       .footer-container {
           grid-area: footer;
       }
-       
     }
 
     @media(min-width:1440px) {
@@ -203,5 +237,16 @@ span:first-child {
           .section-content-description {
             margin-bottom: 40px;
               font-size: 1.6em;
+          }
+        
+    }
+    @media(min-width:1600px) {
+        .section-content {
+            width:46%;
+           
+          }
+          .section-content-description {
+            margin-bottom: 40px;
+              font-size: 1.8em;
           }
     }
