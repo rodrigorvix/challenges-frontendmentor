@@ -138,5 +138,23 @@ span:first-child {
   }
   @media(min-width: 1200px) {
       
+        #container {
+            display: grid;
+            grid-template-areas: "l i"
+                                    "cont i"
+                                    "f i";
+        }
+        .header-container {
+            grid-area: l;
+        }
+        .section-container {
+            grid-area: cont;
+        }
+        .footer-container {
+            grid-area: f;
+        }
+        .main-hero {
+            grid-area: i;
+        }
       
     }
