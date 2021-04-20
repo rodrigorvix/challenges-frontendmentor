@@ -83,10 +83,11 @@ span:first-child {
     bottom: 0;
     visibility: hidden;
 }
-.input-message-error {
+.input-message {
     color:var(--soft-red);
     font-size: 1.4em;
     margin-left: 20px;
+    margin-top: 10px;
     visibility: hidden;
 }
 .section-input::placeholder {

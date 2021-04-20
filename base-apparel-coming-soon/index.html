@@ -18,66 +18,95 @@
 </head>
 
 <body>
-  
 
-    <main id="main-container">
 
-      <header class="header-container ">
-        <div class="header-logo">
-          <img src="./images/logo.svg" alt="Logo base apparel">
-        </div>
-      </header>
+  <main id="main-container">
 
-      <section class="section-hero">
-        <picture class="section-hero">
-          <source class="section-hero-mobile" media="(max-width: 720px)" srcset="./images/hero-mobile.jpg"
-            alt="Image hero">
-          <source class="section-hero-desktop" srcset="./images/hero-desktop.jpg" alt="Image hero">
-          <img src="./images/hero-mobile.jpg" alt="Image hero">
-        </picture>
-      </section>
+    <header class="header-container ">
+      <div class="header-logo">
+        <img src="./images/logo.svg" alt="Logo base apparel">
+      </div>
+    </header>
 
-      <section class="section-content">
+    <section class="section-hero">
+      <picture class="section-hero">
+        <source class="section-hero-mobile" media="(max-width: 720px)" srcset="./images/hero-mobile.jpg"
+          alt="Image hero">
+        <source class="section-hero-desktop" srcset="./images/hero-desktop.jpg" alt="Image hero">
+        <img src="./images/hero-mobile.jpg" alt="Image hero">
+      </picture>
+    </section>
 
-        <h1 class="section-content-title">
-          <span>We're</span>
-          <span>coming</span>
-          <span>soon</span>
-        </h1>
+    <section class="section-content">
 
-        <p class="section-content-description">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
+      <h1 class="section-content-title">
+        <span>We're</span>
+        <span>coming</span>
+        <span>soon</span>
+      </h1>
 
-        <form class="section-content-form" action="#">
-          <label class="screen-reader-text" for="email">Email:</label>
-          <input class="section-input" type="email" name="email" id="email" placeholder=" Email Address">
-          <div class="input-icon-error">
-            <img src="./images/icon-error.svg" alt="Error e-mail">
-          </div>
-          
-          <button class="section-button" type="submit">
-            <img src="./images/icon-arrow.svg" alt="icon arrow">
-          </button>
-        </form>
-        <div class="input-message-error">
-          <p>Please provide a valide e-mail</p>
+      <p class="section-content-description">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form class="section-content-form" action="#">
+        <label class="screen-reader-text" for="email">Email:</label>
+        <input class="section-input" type="email" name="email" id="email" placeholder=" Email Address">
+        <div class="input-icon-error">
+          <img src="./images/icon-error.svg" alt="Error e-mail">
         </div>
 
-      </section>
+        <button class="section-button" type="submit">
+          <img src="./images/icon-arrow.svg" alt="icon arrow">
+        </button>
+      </form>
+      <div class="input-message">
+        
+      </div>
 
-      <footer class="footer-container">
-        <p class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="#">Rodrigorvix</a>.
-        </p>
-      </footer>
+    </section>
 
-    </main>
+    <footer class="footer-container">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Rodrigorvix</a>.
+      </p>
+    </footer>
 
-<script>
-</script>
+  </main>
+
+  <script>
+
+    const buttonSubmit = document.querySelector(".section-button")
+
+    buttonSubmit.addEventListener("click", validateEmail)
+
+    buttonSubmit.classList.remove("section-button-active")
+
+    function validateEmail() {
+
+      buttonSubmit.classList.add("section-button-active")
+
+      const email = document.getElementById("email").value
+      const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+      const message = document.querySelector('.input-message')
+      const iconError = document.querySelector(".input-icon-error")
+
+      if (email.match(pattern)) {
+
+        alert("Email enviado!")
+        message.style.visibility = "hidden"
+        iconError.style.visibility = "hidden"
+       
+      } else {
+        message.innerHTML = "Please provide a valide e-mail"
+        message.style.visibility = "visible"
+        iconError.style.visibility = "visible"
+
+      }
+    }
+  </script>
 </body>
 
 </html>
