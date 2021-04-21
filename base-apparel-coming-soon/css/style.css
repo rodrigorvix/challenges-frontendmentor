@@ -105,8 +105,8 @@ span:first-child {
     font-size: 1.4em;
     height: auto;
     width: 60px;
-    
     border: none;
+    outline: none;
 }
 .section-button:hover {
     cursor: pointer;
