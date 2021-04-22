@@ -62,7 +62,7 @@
         </button>
       </form>
       <div class="input-message">
-        
+
       </div>
 
     </section>
@@ -76,38 +76,7 @@
 
   </main>
 
-  <script>
-
-    const buttonSubmit = document.querySelector(".section-button")
-
-    buttonSubmit.addEventListener("click", validateEmail)
-
-    function validateEmail() {
-
-      const inputEmail = document.getElementById("email")
-      const email = document.getElementById("email").value
-      const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
-      const message = document.querySelector('.input-message')
-      const iconError = document.querySelector(".input-icon-error")
-
-      inputEmail.focus()
-
-      if (email.match(pattern)) {
-
-        alert("Email enviado!")
-        message.style.visibility = "hidden"
-        iconError.style.visibility = "hidden"
-        buttonSubmit.classList.remove("section-button-active")
-       
-      } else {
-        buttonSubmit.classList.add("section-button-active")
-        message.innerHTML = "Please provide a valide e-mail"
-        message.style.visibility = "visible"
-        iconError.style.visibility = "visible"
-        
-      }
-    }
-  </script>
+  <script src="./script/main.js"></script>
 </body>
 
 </html>
