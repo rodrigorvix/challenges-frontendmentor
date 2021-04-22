@@ -28,6 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
+![base-apparel-page](https://user-images.githubusercontent.com/80417182/115654237-19548480-a307-11eb-9313-176d5e0edbd6.png)
+
 
 ### Links
 
