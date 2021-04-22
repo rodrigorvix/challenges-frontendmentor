@@ -186,7 +186,7 @@ span:first-child {
       .header-container {
         grid-area: header;
         width: 50%;
-        margin: 5em auto;
+        margin: 4em auto;
       }
       .header-logo img {
           height: auto;
