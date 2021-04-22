@@ -144,7 +144,7 @@ span:first-child {
   @media (min-width:420px) {
     
     .header-container {
-        margin: 3em;
+        margin: 5em;
     }
     .section-content {
         width: 70%;
@@ -186,7 +186,7 @@ span:first-child {
       .header-container {
         grid-area: header;
         width: 50%;
-        margin: auto;
+        margin: 5em auto;
       }
       .header-logo img {
           height: auto;
