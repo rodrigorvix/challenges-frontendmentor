@@ -1,7 +1,28 @@
-const buttonSubmit = document.querySelector(".section-button")
 const form = document.querySelector('.section-content-form')
+const inputEmail = document.getElementById("email")
+const message = document.querySelector('.input-message')
+const iconError = document.querySelector(".input-icon-error")
+const buttonSubmit = document.querySelector(".section-button")
 
-buttonSubmit.addEventListener("click", submitForm)
+
+
+form.addEventListener("submit", (event) => {
+  inputEmail.focus()
+
+  if (validateEmail(inputEmail.value)) {
+    alert("E-mail successfully registered !")
+   
+
+  } else {
+    event.preventDefault()
+    message.innerHTML = "Please provide a valide e-mail"
+    message.style.visibility = "visible"
+    iconError.style.visibility = "visible"
+    buttonSubmit.classList.add("section-button-active")
+
+    resetSubmit()
+  }
+})
 
 
 function validateEmail(email) {
@@ -11,41 +32,20 @@ function validateEmail(email) {
   return email.match(pattern)
 }
 
-function submitForm() {
+function resetSubmit() {
+  document.addEventListener("mousedown", (e) => {
 
-  form.addEventListener("submit", (e) => {
+    inputEmail.blur()
+    message.style.visibility = "hidden"
+    iconError.style.visibility = "hidden"
+    buttonSubmit.classList.remove("section-button-active")
 
-    const inputEmail = document.getElementById("email")
-    const message = document.querySelector('.input-message')
-    const iconError = document.querySelector(".input-icon-error")
-
-    inputEmail.focus()
-
-    if (validateEmail(inputEmail.value)) {
-
-      alert("Registered Email!")
-      message.style.visibility = "hidden"
-      iconError.style.visibility = "hidden"
-      buttonSubmit.classList.remove("section-button-active")
-      
-
-    } else {
-      message.innerHTML = "Please provide a valide e-mail"
-      message.style.visibility = "visible"
-      iconError.style.visibility = "visible"
-      buttonSubmit.classList.add("section-button-active")
-      e.preventDefault()
-    }
-
-    document.addEventListener("mousedown", (e) => {
-      
-      inputEmail.blur()
-      message.style.visibility = "hidden"
-      iconError.style.visibility = "hidden"
-      buttonSubmit.classList.remove("section-button-active")
-    })
   })
-
 }
+
+
+
+
+
 
 
