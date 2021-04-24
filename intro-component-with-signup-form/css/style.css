@@ -67,9 +67,19 @@ body {
     border: solid 1px yellow;
     background-color: white;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
 }
 .main-form input {
     display: block;
-    width: 80%;
+    width: 90%;
+    margin: 10px auto;
+    
+}
+.main-button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
 }
 
