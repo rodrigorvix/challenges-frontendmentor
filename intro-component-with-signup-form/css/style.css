@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --red: hsl(0, 100%, 74%); /* Fundo*/
+    --green: hsl(154, 59%, 51%); /* botão*/
+
+    --blue:hsl(248, 32%, 49%);/* card*/
+
+    --dark-blue:hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-intro-mobile.png);
+    
+    background-color: var(--red);
+}
+#container {
+    width: 90%;
+    margin: 90px auto;
+}
+.header-container {
+    text-align: center;
+    color: white;
+    line-height: 1.3;
+    margin-bottom: 65px;
+}
+.header-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.header-description {
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: 1.5;  
+}
+.main-container {
+    
+    /* margin-top: 65px; */
+}
+.main-card {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: white;
+    padding: 3px 50px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 0 5px rgba(0,0,0,.2);
+    background-color: var(--blue);
+    margin-bottom: 30px;
+}
+.main-card span {
+    font-weight: 400;
+}
+.main-form {
+    border: solid 1px yellow;
+    background-color: white;
+    border-radius: 8px;
+}
+.main-form input {
+    display: block;
+    width: 80%;
+}
+
