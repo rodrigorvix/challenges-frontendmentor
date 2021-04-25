@@ -10,6 +10,11 @@
     --grayish-blue: hsl(246, 25%, 77%);
 
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html {
     font-size: 62.5%;
@@ -45,42 +50,115 @@ body {
     line-height: 1.5;  
 }
 .main-container {
-    
-    /* margin-top: 65px; */
+    max-width: 600px;
 }
+
 .main-card {
     font-weight: 600;
     font-size: 1.6em;
     color: white;
-    padding: 3px 50px;
+    padding: 20px 50px;
     text-align: center;
     line-height: 1.5;
     border-radius: 8px;
     box-shadow: 0 5px rgba(0,0,0,.2);
     background-color: var(--blue);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .main-card span {
     font-weight: 400;
 }
 .main-form {
-    border: solid 1px yellow;
+  
     background-color: white;
+    box-shadow: 0 5px rgba(0,0,0,.2);
     border-radius: 8px;
-    padding: 10px;
-    width: 100%;
-   
-    
+    padding: 20px;    
 }
+
 .main-form input {
-    display: block;
-    width: 100%;
-    
+  
+   padding: 20px;
+   font-size: 1.4em;
+   font-weight: 600;
+   margin-bottom: 15px;
+   width: 100%;
+   border-radius: 5px;
+   border: var(--grayish-blue) 1px solid;
+   outline: none;
+   
 }
-.main-button {
-    display: block;
-    width: 100%;
-    border: 1px solid red;
+.main-form input:focus {
+    border: var(--red) 2px solid;
     
 }
 
+.main-button {
+   width: 100%;
+   padding: 20px;
+   font-size: 1.4em;
+   font-weight: 600;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   box-shadow: 0 5px rgba(0,0,0,.2);
+   border: none;
+   background-color: var(--green);
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+.main-button:hover {
+    background-color: hsl(154, 50%, 62%);
+    cursor: pointer;
+}
+.main-terms {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 20px;
+    line-height: 2;
+    color: var(--grayish-blue);
+    font-weight: 500;
+}
+
+.main-terms a {
+    color:var(--red);
+    font-weight: 700;
+    text-decoration: none;
+}
+.attribution {
+    margin-top: 6em;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    color:var(--desaturated-red);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+
+  }
+  .attribution a:hover {
+    color: hsl(228, 79%, 62%);
+  }
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  @media(min-width:420px) {
+      
+    #container {
+        width: 80%;
+    }
+    .header-title {
+        font-size: 3.2em;
+    }
+    .header-description {
+        font-size: 2em;
+    }
+    .main-card {
+        font-size: 2em;
+    }
+  }
