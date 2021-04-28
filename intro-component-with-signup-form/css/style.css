@@ -77,29 +77,53 @@ body {
     box-shadow: 0 10px rgba(0,0,0,.2);
     border-radius: 8px;
     padding: 20px;
-     
+       
 }
-
+.main-form-inputs {
+    margin-bottom: 15px;
+    position: relative;
+}
+.icon-error::before {
+    content: url(./../images/icon-error.svg);
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    top: 20px;
+   
+}
 .main-form input {
   
-   padding: 20px;
+   padding: 18px;
    font-size: 1.4em;
    font-weight: 600;
-   margin-bottom: 15px;
    width: 100%;
+   margin-bottom: 5px;
    border-radius: 5px;
    border: var(--grayish-blue) 1px solid;
    outline: none;
-   
+  
+
 }
+
 .main-form input:focus {
     border: var(--red) 2px solid;
     
 }
 
+.message-error {
+    color: var(--red);
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align:right;
+    display: block;
+    
+ }
+ 
+
 .main-button {
    width: 100%;
-   padding: 20px;
+   padding: 18px;
    font-size: 1.4em;
    font-weight: 600;
    margin-bottom: 10px;
@@ -182,6 +206,7 @@ body {
             background-size: cover;
         }
         #container {
+            width: 85%;
             display: grid;
             gap: 20px;
             margin: 120px auto 0;
@@ -193,29 +218,34 @@ body {
         .header-container {
             grid-area: header;
             text-align: left;
-            margin-top: 110px;
+            margin-top: 115px;
             padding-right: 10px;
            
         }
         .header-title {
             
-            font-size: 4.5em;
+            font-size: 5em;
             line-height: 1.2;
         }
         .main-container {
             grid-area: main;
+            width: 600px;
            
         }
        .main-card {
-           margin-bottom: 25px;
+           margin-bottom: 20px;
        }
         .main-form {
-            padding: 35px;
+            padding: 40px;
+            
         }
-        .main-form input {
+        /* .main-form-inputs {
             margin-bottom: 20px;
+        } */
+        .main-form input {
+            margin-bottom: 10px;
         }
-        
+    
         .footer-container {
             grid-area: footer;
         }

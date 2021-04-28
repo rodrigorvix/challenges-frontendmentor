@@ -4,7 +4,7 @@ const lastName = document.getElementById("lastName")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 const button = document.querySelector(".main-button")
-
+const inputs = document.querySelectorAll(".main-form-inputs")
 
 form.addEventListener("submit", (e) => {
 
@@ -19,28 +19,39 @@ form.addEventListener("submit", (e) => {
   }
 })
 
+function messageError (input) {
+  const message = document.createElement('span')
+  message.classList.add("message-icon")
+}
+
 function validateForm(firstName, lastName, email, password) {
 
   let hashValidate = 0
 
   if (isEmpty(firstName)) {
     firstName.focus()
-    firstName.style.background = "blue"
+    inputs[0].classList.add("icon-error")
+    messageError.textContent = "testando de novo"
+    inputs[0].appendChild(messageError)
     hashValidate++
   }
   if (isEmpty(lastName)) {
     lastName.focus()
-    lastName.style.background = "blue"
+    messageError.textContent = "testando de novo lastname"
+    inputs[1].appendChild(messageError)
+   inputs[1].classList.add("icon-error")
     hashValidate++
   }
   if (!validateEmail(email)) {
     email.focus()
     email.style.background = "blue"
+   inputs[2].classList.add("icon-error")
     hashValidate++
   }
   if (isEmpty(password)) {
     password.focus()
     password.style.background = "blue"
+   inputs[3].classList.add("icon-error")
     hashValidate++
   }
   return hashValidate
