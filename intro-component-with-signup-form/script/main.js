@@ -1,16 +1,17 @@
 const form = document.querySelector(".main-form")
+const firstName = document.getElementById("firstName")
+const lastName = document.getElementById("lastName")
+const email = document.getElementById("email")
+const password = document.getElementById("password")
+const button = document.querySelector(".main-button")
 
 
 form.addEventListener("submit", (e) => {
 
-  const firstName = document.getElementById("firstName")
-  const LastName = document.getElementById("LastName")
-  const email = document.getElementById("email")
-  const password = document.getElementById("password")
+  button.classList.add("main-button-active")
 
-
-  if (validateForm(firstName, LastName, email, password) === 0) {
-    alert("Formulário enviado")
+  if (validateForm(firstName, lastName, email, password) === 0) {
+    alert("Successful registration !")
 
   } else {
     e.preventDefault()
@@ -18,7 +19,7 @@ form.addEventListener("submit", (e) => {
   }
 })
 
-function validateForm(firstName, LastName, email, password) {
+function validateForm(firstName, lastName, email, password) {
 
   let hashValidate = 0
 
@@ -27,12 +28,12 @@ function validateForm(firstName, LastName, email, password) {
     firstName.style.background = "blue"
     hashValidate++
   }
-  if (isEmpty(LastName)) {
-    LastName.focus()
-    LastName.style.background = "blue"
+  if (isEmpty(lastName)) {
+    lastName.focus()
+    lastName.style.background = "blue"
     hashValidate++
   }
-  if (!validateEmail(email.value)) {
+  if (!validateEmail(email)) {
     email.focus()
     email.style.background = "blue"
     hashValidate++
@@ -54,21 +55,23 @@ function validateEmail(email) {
 
   const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
 
-  return email.match(pattern)
+  return email.value.match(pattern)
 }
 
 function resetSubmit() {
   document.addEventListener("mousedown", (e) => {
 
     firstName.blur()
-    LastName.blur()
+    lastName.blur()
     email.blur()
     password.blur()
 
     firstName.style.background = "white"
-    LastName.style.background = "white"
+    lastName.style.background = "white"
     email.style.background = "white"
     password.style.background = "white"
+    button.classList.remove("main-button-active")
+
 
 
   })
