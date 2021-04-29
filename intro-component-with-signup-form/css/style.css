@@ -103,12 +103,17 @@ body {
    border: var(--grayish-blue) 1px solid;
    outline: none;
   
-
 }
 
 .main-form input:focus {
     border: var(--red) 2px solid;
     
+}
+.main-form .error {
+    border: var(--red) 2px solid;
+}
+.main-form .error::placeholder {
+    color: var(--red);
 }
 
 .message-error {
@@ -117,10 +122,10 @@ body {
     font-size: 1.2em;
     text-align:right;
     display: block;
+    font-style: italic;
     
  }
  
-
 .main-button {
    width: 100%;
    padding: 18px;
@@ -199,7 +204,7 @@ body {
        
     }
 }
-    @media (min-width:1150px) {
+    @media (min-width:1100px) {
 
         body {
             background-image: url(./../images/bg-intro-desktop.png);

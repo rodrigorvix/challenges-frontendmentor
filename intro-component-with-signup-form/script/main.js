@@ -5,7 +5,6 @@ const email = document.getElementById("email")
 const password = document.getElementById("password")
 const button = document.querySelector(".main-button")
 const inputs = document.querySelectorAll(".main-form-inputs")
-const messages = document.querySelectorAll(".message-error")
 
 form.addEventListener("submit", (e) => {
 
@@ -27,30 +26,33 @@ function validateForm() {
   if (isEmpty(firstName)) {
 
     firstName.insertAdjacentHTML('afterend', '<span class="message-error">First Name cannot be empty</span>')
-    firstName.focus()
+    firstName.classList.add("error")
+    firstName.placeholder = ""
     inputs[0].classList.add("icon-error")
     hashValidate++
   }
   if (isEmpty(lastName)) {
 
     lastName.insertAdjacentHTML('afterend', '<span class="message-error">Last Name cannot be empty</span>')
-    lastName.focus()
+    lastName.classList.add("error")
+    lastName.placeholder = ""
     inputs[1].classList.add("icon-error")
     hashValidate++
   }
   if (!validateEmail(email)) {
 
     email.insertAdjacentHTML('afterend', '<span class="message-error">Looks like this is not an email</span>')
-    email.value = "email@example/com"
-    email.style.color = "red"
-    email.focus()
+    email.classList.add("error")
+    email.value = ""
+    email.placeholder = "email@example.com"
     inputs[2].classList.add("icon-error")
     hashValidate++
   }
   if (isEmpty(password)) {
 
     password.insertAdjacentHTML('afterend', '<span class="message-error">Password cannot be empty</span>')
-    password.focus()
+    password.classList.add("error")
+    password.placeholder = ""
     inputs[3].classList.add("icon-error")
     hashValidate++
   }
@@ -73,14 +75,25 @@ function resetSubmit() {
   document.addEventListener("mousedown", (e) => {
 
     button.classList.remove("main-button-active")
+    firstName.classList.remove("error")
+    lastName.classList.remove("error")
+    email.classList.remove("error")
+    password.classList.remove("error")
 
+    firstName.placeholder = "First Name"
+    lastName.placeholder = "Last Name"
+    email.placeholder = "Email Address"
+
+    password.placeholder = "Password"
+
+
+    document.querySelectorAll(".message-error").forEach((e) => {
+      e.parentNode.removeChild(e)
+    })
     inputs.forEach((e) => {
       e.classList.remove("icon-error")
       e.blur()
 
     })
-
-
-
   })
 }
