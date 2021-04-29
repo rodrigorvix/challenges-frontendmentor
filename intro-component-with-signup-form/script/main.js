@@ -83,7 +83,6 @@ function resetSubmit() {
     firstName.placeholder = "First Name"
     lastName.placeholder = "Last Name"
     email.placeholder = "Email Address"
-
     password.placeholder = "Password"
 
 
@@ -92,7 +91,6 @@ function resetSubmit() {
     })
     inputs.forEach((e) => {
       e.classList.remove("icon-error")
-      e.blur()
 
     })
   })
