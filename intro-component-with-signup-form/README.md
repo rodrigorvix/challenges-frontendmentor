@@ -28,6 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
+![intro-component](https://user-images.githubusercontent.com/80417182/116548502-af217e00-a8ca-11eb-9005-f6b38d39c15f.png)
 
 
 ### Links
