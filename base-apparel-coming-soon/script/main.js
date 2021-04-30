@@ -5,8 +5,10 @@ const iconError = document.querySelector(".input-icon-error")
 const buttonSubmit = document.querySelector(".section-button")
 
 
+form.noValidate = true
 
 form.addEventListener("submit", (event) => {
+  
   inputEmail.focus()
 
   if (validateEmail(inputEmail.value)) {

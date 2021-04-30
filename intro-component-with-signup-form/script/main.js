@@ -6,6 +6,9 @@ const password = document.getElementById("password")
 const button = document.querySelector(".main-button")
 const inputs = document.querySelectorAll(".main-form-inputs")
 
+
+removeValidationHtml()
+
 form.addEventListener("submit", (e) => {
 
   button.classList.add("main-button-active")
@@ -18,6 +21,16 @@ form.addEventListener("submit", (e) => {
     resetSubmit()
   }
 })
+
+
+function removeValidationHtml () {
+  form.noValidate = true
+
+ inputs.forEach((e) => {
+   e.lastElementChild.required = false
+ })
+
+}
 
 function validateForm() {
 
