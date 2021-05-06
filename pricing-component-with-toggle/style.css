@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(240, 78%, 98%);
+    /* background-image: url(./images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right; */
+}
+
+#container {
+    width: 90%;
+   margin: 40px auto;
+    text-align: center;
+}
+.title {
+    font-size: 2.5em;
+    /* margin-bottom: 20px; */
+    color: hsl(232, 13%, 33%);
+}
+
+.text-label {
+    display: inline-block;
+    font-size: 1.5em;
+    color: hsl(234, 14%, 74%);
+    margin: 30px;
+}
+.card {
+    padding: 30px;
+    max-width: 400px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+   
+}
+.card h2 {
+    font-size: 1.5em;
+    color: hsl(232, 13%, 33%);
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 1.5em;
+    padding: 15px;
+    color:hsl(232, 13%, 33%) ;
+    border-top: 1px solid hsl(240, 78%, 98%);
+}
+.card.professional {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: hsl(240, 78%, 98%);
+}
+.card.professional h2{
+    color: hsl(240, 78%, 98%);
+}
+.card.professional p {
+    color: hsl(240, 78%, 98%);
+}
+.card.professional a {
+    background: hsl(240, 78%, 98%);
+    color:hsl(237, 63%, 64%);
+}
+
+.card .card-price {
+    font-size: 4em;
+    border: none;
+    color: hsl(232, 13%, 33%);
+}
+.card .monthly {
+    display: none;
+}
+.learn-more {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: hsl(240, 78%, 98%);
+    background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%)) ;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }

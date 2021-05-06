@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Rodrigorvix | Frontend Mentor | [Challenge Name Here]</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  Our Pricing
-  Annually
-  Monthly
+  <div id="container">
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+    <h1 class="title"> Our Pricing</h1>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+    <label for="checkbox-select" class="text-label">Annually</label>
+    <input type="checkbox" name="checkbox-select" id="checkbox-select">
+    <label for="checkbox-select" class="text-label">
+      <span class="checkbox-toggle"></span> 
+      Monthly
+    </label>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
+    <article class="card">
+      <h2>Basic</h2>
+      <p class="card-price monthly">&dollar;19.99</p>
+      <p class="card-price annually">&dollar;199.99</p>
+      <p>500 GB Storage</p>
+      <p>2 Users Allowed</p>
+      <p>Send up to 3 GB</p>
+     <a href="#" class="learn-more">Learn More</a>
+    </article>
+
+    <article class="card professional">
+      <h2>Professional</h2>
+      <p class="card-price monthly">&dollar;24.99</p>
+      <p class="card-price annually">&dollar;249.99</p>
+      <p>1 TB Storage</p>
+      <p>5 Users Allowed</p>
+      <p>Send up to 10 GB</p>
+      <a href="#" class="learn-more">Learn More</a>
+    </article>
+
+    <article class="card">
+      <h2>Master</h2>
+      <p class="card-price monthly">&dollar;39.99</p>
+      <p class="card-price annually">&dollar;399.99</p>
+      <p>2 TB Storage</p>
+      <p>10 Users Allowed</p>
+      <p>Send up to 20 GB</p>
+      <a href="#" class="learn-more">Learn More</a>
+    </article>
+
+
+   
   </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
 </body>
+
 </html>
