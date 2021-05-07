@@ -41,7 +41,7 @@ Users should be able to:
 
 ### What I learned
 
-In this practical project, the use of the CSS3 pseudo-class "checked" to perform the challenge without using JavaScript.
+In this project I practiced using the CSS3 pseudo-class "checked" to perform the challenge without using JavaScript.
 
 ## Author
 
