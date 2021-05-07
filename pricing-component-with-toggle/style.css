@@ -12,17 +12,26 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: hsl(240, 78%, 98%);
-  /* background-image: url(./images/bg-top.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top right; */
+  overflow-y: hidden;
+  position: relative;
 }
-
+.image-background {
+  position: absolute;
+  z-index: -1;
+}
+.image-background.bg-top {
+  top: -30px;
+  right: -200px;
+}
+.image-background.bg-bottom {
+  display: none;
+}
 #container {
   width: 90%;
   margin: 40px auto;
   text-align: center;
 }
+
 .title {
   font-size: 2.5em;
   /* margin-bottom: 20px; */
@@ -136,14 +145,14 @@ body {
   border: 1px solid hsl(237, 63%, 64%);
 }
 .attribution {
-  color: ;
+  color: hsl(232, 13%, 33%);
   font-size: 1em;
 }
 .attribution a {
-  color: blue;
+  color: hsl(237, 63%, 64%);
 }
 .attribution a:hover {
-  color: hsl(228, 79%, 62%);
+  color: blue;
 }
 .screen-reader-text {
   position: absolute;
@@ -152,15 +161,55 @@ body {
 }
 
 @media (min-width: 900px) {
+  .bg-top {
+    right: 0px;
+  }
+  .bg-bottom {
+    bottom: 0;
+    left: 0;
+    display: block;
+  }
   #section-cards {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     margin-bottom: 100px;
+  }
+
+  .title {
+    margin-top: 50px;
+    font-size: 3em;
+  }
+  .text-label {
+    margin-top: 50px;
+  }
+
+  .checkbox-toggle {
+    width: 50px;
+    height: 30px;
+    margin: -5px 15px;
+  }
+  .checkbox-toggle::before {
+    height: 22px;
+    width: 22px;
+    margin: 4px;
+  }
+  #checkbox:checked + .text-label .checkbox-toggle::before {
+    transform: translateX(20px);
   }
   .card {
     width: 350px;
     margin-left: 0;
     margin-right: 0;
+  }
+  .card.professional {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 50px 30px;
+  }
+  .card-title {
+    font-size: 2em;
+  }
+  .card .card-price {
+    font-size: 6em;
   }
 }
