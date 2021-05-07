@@ -19,11 +19,11 @@ body {
   position: absolute;
   z-index: -1;
 }
-.image-background.bg-top {
+.image-background.top {
   top: -30px;
-  right: -200px;
+  right:-200px;
 }
-.image-background.bg-bottom {
+.image-background.bottom {
   display: none;
 }
 #container {
