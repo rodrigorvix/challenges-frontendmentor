@@ -20,8 +20,9 @@ body {
   z-index: -1;
 }
 .image-background.top {
-  top: -30px;
-  right:-200px;
+  top:-100px;
+  right:-180px;
+  
 }
 .image-background.bottom {
   display: none;
@@ -34,7 +35,6 @@ body {
 
 .title {
   font-size: 2.5em;
-  /* margin-bottom: 20px; */
   color: hsl(232, 13%, 33%);
 }
 
@@ -161,18 +161,20 @@ body {
 }
 
 @media (min-width: 900px) {
-  .bg-top {
-    right: 0px;
+
+  .image-background.top {
+    right: 0;
+    
   }
-  .bg-bottom {
-    bottom: 0;
+  .image-background.bottom {
+    bottom: 0px;
     left: 0;
     display: block;
   }
   #section-cards {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .title {
