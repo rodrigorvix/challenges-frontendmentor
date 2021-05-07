@@ -1,98 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: hsl(240, 78%, 98%);
-    /* background-image: url(./images/bg-top.svg);
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(240, 78%, 98%);
+  /* background-image: url(./images/bg-top.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right; */
 }
 
 #container {
-    width: 90%;
-   margin: 40px auto;
-    text-align: center;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
 }
 .title {
-    font-size: 2.5em;
-    /* margin-bottom: 20px; */
-    color: hsl(232, 13%, 33%);
+  font-size: 2.5em;
+  /* margin-bottom: 20px; */
+  color: hsl(232, 13%, 33%);
 }
 
 .text-label {
-    display: inline-block;
-    font-size: 1.5em;
-    color: hsl(234, 14%, 74%);
-    margin: 30px;
+  display: inline-block;
+  flex-direction: row;
+  font-size: 1.5em;
+  color: hsl(234, 14%, 74%);
+  margin: 30px 0 60px;
+}
+.checkbox-toggle {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 20px;
+  position: relative;
+  margin: -5px 15px;
+}
+.checkbox-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  margin: 3px;
+  transition: all 0.5s;
+}
+#checkbox:checked + .text-label .checkbox-toggle::before {
+  transform: translateX(15px);
+}
+#checkbox:checked ~ #section-cards .card .price-monthly {
+  display: block;
+}
+#checkbox:checked ~ #section-cards .card .price-annually {
+  display: none;
 }
 .card {
-    padding: 30px;
-    max-width: 400px;
-    background-color: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-   
+  padding: 30px;
+  max-width: 350px;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
 }
-.card h2 {
-    font-size: 1.5em;
-    color: hsl(232, 13%, 33%);
-    margin-bottom: 15px;
+.card-title {
+  font-size: 1.5em;
+  color: hsl(232, 13%, 33%);
+  margin-bottom: 15px;
 }
 .card p {
-    font-size: 1.5em;
-    padding: 15px;
-    color:hsl(232, 13%, 33%) ;
-    border-top: 1px solid hsl(240, 78%, 98%);
+  font-size: 1.5em;
+  padding: 15px;
+  color: hsl(232, 13%, 33%);
+  border-top: 1px solid hsl(234, 14%, 74%);
 }
 .card.professional {
-    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-    color: hsl(240, 78%, 98%);
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
-.card.professional h2{
-    color: hsl(240, 78%, 98%);
-}
+.card.professional .card-title,
 .card.professional p {
-    color: hsl(240, 78%, 98%);
+  color: hsl(240, 78%, 98%);
 }
-.card.professional a {
-    background: hsl(240, 78%, 98%);
-    color:hsl(237, 63%, 64%);
-}
-
 .card .card-price {
-    font-size: 4em;
-    border: none;
-    color: hsl(232, 13%, 33%);
+  font-size: 4em;
+  border: none;
+  color: hsl(232, 13%, 33%);
 }
-.card .monthly {
-    display: none;
+.card .price-monthly {
+  display: none;
+}
+.card.professional .button-professional {
+  color: hsl(240, 78%, 98%);
+}
+.card.professional .learn-more {
+  background: hsl(240, 78%, 98%);
+  color: hsl(237, 63%, 64%);
+}
+.card.professional .learn-more:hover {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: hsl(240, 78%, 98%);
+  border: 1px solid hsl(240, 78%, 98%);
+}
+.card .button {
+  padding: 15px 0;
+  font-size: 1em;
 }
 .learn-more {
-    text-decoration: none;
-    font-size: 1.5em;
-    color: hsl(240, 78%, 98%);
-    background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%)) ;
-    display: inline-block;
-    width: 100%;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: .07em;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: hsl(240, 78%, 98%);
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.learn-more:hover {
+  background: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+.attribution {
+  color: ;
+  font-size: 1em;
+}
+.attribution a {
+  color: blue;
+}
+.attribution a:hover {
+  color: hsl(228, 79%, 62%);
+}
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
-.screen-reader-text {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+@media (min-width: 900px) {
+  #section-cards {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 100px;
   }
+  .card {
+    width: 350px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
