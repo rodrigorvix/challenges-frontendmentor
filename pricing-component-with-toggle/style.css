@@ -13,6 +13,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: hsl(240, 78%, 98%);
   overflow-y: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 .image-background {
