@@ -12,7 +12,6 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: hsl(240, 78%, 98%);
-  overflow-y: hidden;
   position: relative;
 }
 .image-background {
@@ -160,6 +159,9 @@ body {
 }
 
 @media (min-width: 900px) {
+  body {
+    overflow-y: hidden;
+}
   .image-background.top {
     right: 0;
   }
