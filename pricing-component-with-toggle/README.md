@@ -25,6 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
+![pricing-component](https://user-images.githubusercontent.com/80417182/117553790-dba36b80-b029-11eb-857b-8bb6f1af20f0.png)
+
 
 ### Links
 
