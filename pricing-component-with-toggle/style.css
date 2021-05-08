@@ -20,9 +20,8 @@ body {
   z-index: -1;
 }
 .image-background.top {
-  top:-100px;
-  right:-180px;
-  
+  top: -100px;
+  right: -180px;
 }
 .image-background.bottom {
   display: none;
@@ -161,10 +160,8 @@ body {
 }
 
 @media (min-width: 900px) {
-
   .image-background.top {
     right: 0;
-    
   }
   .image-background.bottom {
     bottom: 0px;
@@ -176,9 +173,8 @@ body {
     justify-content: center;
     margin-bottom: 50px;
   }
-
   .title {
-    margin-top: 50px;
+    margin-top: 70px;
     font-size: 3em;
   }
   .text-label {
@@ -198,6 +194,7 @@ body {
   #checkbox:checked + .text-label .checkbox-toggle::before {
     transform: translateX(20px);
   }
+
   .card {
     width: 350px;
     margin-left: 0;
