@@ -45,12 +45,12 @@
   margin-bottom: 20px;
 }
 .buttons-calc {
-  padding: 20px;
+  padding: 25px;
   background-color: var(--background-screen-one);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 .buttons-calc > button {
   padding: 10px;
