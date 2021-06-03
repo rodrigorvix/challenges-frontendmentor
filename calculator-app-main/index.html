@@ -2,50 +2,59 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="./css/style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Rodrigorvix | Frontend Mentor | Calculator app</title>
 </head>
 <body>
-  <div class="conteiner">
-    <header class="header-calc">
-      <h1 class="title-calc">calc</h1>
-      <div class="theme-box">
-        <span class="title-theme">theme</span>
-        <div class="theme-select">
-          <label for="theme-one">1</label>
-          <label for="theme-two">2</label>
-          <label for="theme-three">3</label>
-          <input type="radio" name="theme-one" id="theme-one">
-          <input type="radio" name="theme-two" id="theme-one">
-          <input type="radio" name="theme-three" id="theme-one">
+  <div id="background-calc">
+    <div id="container">
+      <header class="header-calc">
+        <h1 class="title-calc">calc</h1>
+        
+        <div class="theme-box">
+          <span class="title-theme">theme</span>
+          <div class="theme-select">
+            <div class=theme-labels>
+              <label for="theme-one">1</label>
+              <label for="theme-two">2</label>
+              <label for="theme-three">3</label>
+            </div>
+            <input type="radio" name="theme-one" id="theme-one">
+            <input type="radio" name="theme-two" id="theme-two">
+            <input type="radio" name="theme-three" id="theme-three">
+          </div>
         </div>
+      </header>
+      <main>
+        <div class="display-calc">0</div>
+        <div class="buttons-calc">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="del">del</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>+</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>-</button>
+          <button>.</button>
+          <button>0</button>
+          <button>/</button>
+          <button>x</button>
+          <button class="reset">reset</button>
+          <button class="equal">=</button>
       </div>
-    </header>
-    <main>
-      <div class="display-calc">0</div>
-      <div class="buttons-calc">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="button-del">del</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
-        <button>.</button>
-        <button>0</button>
-        <button>/</button>
-        <button>x</button>
-        <button class="button-reset">reset</button>
-        <button class="button-equal">=</button>
+      </main>  
     </div>
-    </main>  
   </div>
+  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/rodrigorvix">Rodrigorvix</a>.
