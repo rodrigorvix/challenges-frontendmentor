@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" data-theme="one">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -16,16 +16,21 @@
         
         <div class="theme-box">
           <span class="title-theme">theme</span>
-          <div class="theme-select">
-            <div class=theme-labels>
-              <label for="theme-one">1</label>
-              <label for="theme-two">2</label>             
-              <label for="theme-three">3</label>
-              <input type="radio" name="theme" id="theme-one">
-              <input type="radio" name="theme" id="theme-two">
-              <input type="radio" name="theme" id="theme-three">
+          <div>
+            <div class="theme-numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
             </div>
-            <div class="label-select"></div>
+            <div class="theme-select"> 
+              <input type="radio" name="theme" id="theme-one">
+              <label for="theme-one" class="labels label-one"></label>
+              <input type="radio" name="theme" id="theme-two">  
+              <label for="theme-two" class="labels label-two"></label>             
+              <input type="radio" name="theme" id="theme-three">         
+              <label for="theme-three" class="labels label-three"></label>
+              <div class="label-select"></div>
+            </div>
           </div>
         </div>
       </header>
@@ -59,5 +64,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/rodrigorvix">Rodrigorvix</a>.
   </footer>
+
+  <script src="./script/main.js"></script>
 </body>
 </html>

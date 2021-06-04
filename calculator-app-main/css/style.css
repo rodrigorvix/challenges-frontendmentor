@@ -1,10 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
-:root {
-  --background-color-one: hsl(222, 26%, 31%);
-  --background-display-one: hsl(223, 31%, 20%);
-  --background-screen-one: hsl(224, 36%, 15%);
+[data-theme="one"]:root {
+  --background-main-one: hsl(222, 26%, 31%);
+  --background-keypad-one: hsl(223, 31%, 20%);
+  --background-display-one: hsl(224, 36%, 15%);
+
   --background-button-one: hsl(30, 25%, 89%);
-  --background-button-shadow-one: hsl(28, 16%, 65%);
+  --button-shadow-one: hsl(28, 16%, 65%);
+
+  --background-reset-one: hsl(225, 21%, 49%);
+  --reset-shadow-one: hsl(224, 28%, 35%);
+
+  --background-toggle-one: hsl(6, 63%, 50%);
+  --background-equal-one: hsl(6, 63%, 50%);
+  --equal-shadow-one: hsl(6, 70%, 34%);
+
+  --text-color-button: hsl(221, 14%, 31%);
+  --text-color-main: white;
+  --text-color-equal: white;
+}
+[data-theme="two"]:root {
+  --background-main-one: hsl(0, 0%, 90%);
+  --background-keypad-one: hsl(0, 5%, 81%);
+  --background-display-one: hsl(0, 0%, 93%);
+
+  --background-button-one: hsl(45, 7%, 89%);
+  --button-shadow-one: hsl(35, 11%, 61%);
+
+  --background-reset-one: hsl(185, 42%, 37%);
+  --reset-shadow-one: hsl(185, 58%, 25%);
+
+  --background-toggle-one: hsl(25, 98%, 40%);
+  --background-equal-one: hsl(25, 98%, 40%);
+  --equal-shadow-one: hsl(25, 99%, 27%);
+
+  --text-color-button: hsl(60, 10%, 19%);
+  --text-color-main: hsl(60, 10%, 19%);
+  --text-color-equal: white;
+}
+[data-theme="three"]:root {
+  --background-main-one: hsl(268, 75%, 9%);
+  --background-keypad-one: hsl(268, 71%, 12%);
+  --background-display-one: hsl(268, 71%, 12%);
+
+  --background-button-one: hsl(268, 47%, 21%);
+  --button-shadow-one: hsl(290, 70%, 36%);
+
+  --background-reset-one: hsl(281, 89%, 26%);
+  --reset-shadow-one: hsl(285, 91%, 52%);
+
+  --background-toggle-one: hsl(176, 100%, 44%);
+  --background-equal-one: hsl(176, 100%, 44%);
+  --equal-shadow-one: hsl(177, 92%, 70%);
+
+  --text-color-button: hsl(52, 100%, 62%);
+  --text-color-main: hsl(52, 100%, 62%);
+  --text-color-equal: black;
 }
 
 * {
@@ -18,12 +68,12 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: var(--background-color-one);
+  background-color: var(--background-main-one);
 }
 #container {
   margin: 30px auto 0;
   width: 88%;
-  /* max-width: 500px; */
+  max-width: 500px;
 }
 .header-calc {
   display: flex;
@@ -31,35 +81,67 @@
 }
 .title-calc {
   font-size: 2rem;
-  color: white;
+  color: var(--text-color-main);
 }
 .theme-box {
   display: flex;
-  color: white;
+  color: var(--text-color-main);
   margin-bottom: 40px;
 }
-.theme-box span {
-  margin: 25px 25px 0 0;
+.title-theme {
+  margin: 25px 20px 0 0;
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-.theme-box input {
+.theme-numbers span {
+  font-size: 0.78rem;
+  padding: 0 8px;
+}
+.theme-select input {
   display: none;
 }
-.label-select {
-  width: 70px;
+.labels {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+}
+.label-one {
+  left: 0;
+}
+.label-two {
+  right: 26px;
+}
+.label-three {
+  right: 0;
+}
+.theme-select {
+  width: 80px;
   border-radius: 16px;
   height: 25px;
-  background-color: var(--background-screen-one);
+  background-color: var(--background-keypad-one);
   display: block;
+  position: relative;
+  color: transparent;
 }
-.theme-labels {
-  display: flex;
-  font-size: 0.75rem;
-  margin-bottom: 2px;
-  justify-content: space-around;
+.label-select {
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--background-toggle-one);
+  display: block;
+  position: absolute;
 }
-
+#theme-two:checked ~ .label-select {
+  transform: translateX(25px);
+}
+#theme-three:checked ~ .label-select {
+  transform: translateX(55px);
+}
 .display-calc {
   background-color: var(--background-display-one);
   border-radius: 5px;
@@ -68,7 +150,7 @@
   font-size: 2rem;
   text-align: end;
   margin-bottom: 20px;
-  color: white;
+  color: var(--text-color-main);
 }
 .buttons-calc {
   padding: 20px;
@@ -77,7 +159,7 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 15px;
   border-radius: 8px;
-  background-color: var(--background-screen-one);
+  background-color: var(--background-keypad-one);
 }
 .buttons-calc > button {
   padding: 16px;
@@ -85,8 +167,15 @@
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
-  box-shadow: 0 0.25rem var(--background-button-shadow-one);
+  box-shadow: 0 0.25rem var(--button-shadow-one);
   background-color: var(--background-button-one);
+  color: var(--text-color-button);
+}
+.buttons-calc .del,
+.buttons-calc .reset {
+  background-color: var(--background-reset-one);
+  box-shadow: 0 0.25rem var(--reset-shadow-one);
+  color: white;
 }
 .buttons-calc .del {
   text-transform: uppercase;
@@ -102,4 +191,7 @@
   font-size: 1rem;
   grid-row: 5 / -1;
   grid-column: 3 / -1;
+  background-color: var(--background-equal-one);
+  box-shadow: 0 0.25rem var(--equal-shadow-one);
+  color: var(--text-color-equal);
 }
