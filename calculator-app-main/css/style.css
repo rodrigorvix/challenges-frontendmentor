@@ -53,13 +53,13 @@
   background-color: var(--background-screen-one);
   display: block;
 }
-
 .theme-labels {
   display: flex;
   font-size: 0.75rem;
   margin-bottom: 2px;
   justify-content: space-around;
 }
+
 .display-calc {
   background-color: var(--background-display-one);
   border-radius: 5px;
