@@ -73,7 +73,7 @@
 #container {
   margin: 30px auto 0;
   width: 88%;
-  max-width: 500px;
+  max-width: 600px;
 }
 .header-calc {
   display: flex;
@@ -194,4 +194,9 @@
   background-color: var(--background-equal);
   box-shadow: 0 0.25rem var(--equal-shadow);
   color: var(--text-color-equal);
+}
+@media (min-width: 720px) {
+  .buttons-calc {
+    gap: 30px;
+  }
 }
