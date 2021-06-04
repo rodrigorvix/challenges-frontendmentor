@@ -1,3 +1,17 @@
+themeSelect()
+insertDisplay()
+
+function insertDisplay() {
+  const buttons = document.querySelectorAll(".buttons-calc button")
+  const display = document.querySelector(".display-calc")
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      display.innerHTML += button.innerText
+    })
+  })
+  
+}
 function themeSelect() {
   const selectOne = document.querySelector('#theme-one')
   const selectTwo = document.querySelector('#theme-two')
@@ -15,4 +29,3 @@ function themeSelect() {
   })
 }
 
-themeSelect()

@@ -1,56 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 [data-theme="one"]:root {
-  --background-main-one: hsl(222, 26%, 31%);
-  --background-keypad-one: hsl(223, 31%, 20%);
-  --background-display-one: hsl(224, 36%, 15%);
+  --background-main: hsl(222, 26%, 31%);
+  --background-keypad: hsl(223, 31%, 20%);
+  --background-display: hsl(224, 36%, 15%);
 
-  --background-button-one: hsl(30, 25%, 89%);
-  --button-shadow-one: hsl(28, 16%, 65%);
+  --background-button: hsl(30, 25%, 89%);
+  --button-shadow: hsl(28, 16%, 65%);
 
-  --background-reset-one: hsl(225, 21%, 49%);
-  --reset-shadow-one: hsl(224, 28%, 35%);
+  --background-reset: hsl(225, 21%, 49%);
+  --reset-shadow: hsl(224, 28%, 35%);
 
-  --background-toggle-one: hsl(6, 63%, 50%);
-  --background-equal-one: hsl(6, 63%, 50%);
-  --equal-shadow-one: hsl(6, 70%, 34%);
+  --background-toggle: hsl(6, 63%, 50%);
+  --background-equal: hsl(6, 63%, 50%);
+  --equal-shadow: hsl(6, 70%, 34%);
 
   --text-color-button: hsl(221, 14%, 31%);
   --text-color-main: white;
   --text-color-equal: white;
 }
 [data-theme="two"]:root {
-  --background-main-one: hsl(0, 0%, 90%);
-  --background-keypad-one: hsl(0, 5%, 81%);
-  --background-display-one: hsl(0, 0%, 93%);
+  --background-main: hsl(0, 0%, 90%);
+  --background-keypad: hsl(0, 5%, 81%);
+  --background-display: hsl(0, 0%, 93%);
 
-  --background-button-one: hsl(45, 7%, 89%);
-  --button-shadow-one: hsl(35, 11%, 61%);
+  --background-button: hsl(45, 7%, 89%);
+  --button-shadow: hsl(35, 11%, 61%);
 
-  --background-reset-one: hsl(185, 42%, 37%);
-  --reset-shadow-one: hsl(185, 58%, 25%);
+  --background-reset: hsl(185, 42%, 37%);
+  --reset-shadow: hsl(185, 58%, 25%);
 
-  --background-toggle-one: hsl(25, 98%, 40%);
-  --background-equal-one: hsl(25, 98%, 40%);
-  --equal-shadow-one: hsl(25, 99%, 27%);
+  --background-toggle: hsl(25, 98%, 40%);
+  --background-equal: hsl(25, 98%, 40%);
+  --equal-shadow: hsl(25, 99%, 27%);
 
   --text-color-button: hsl(60, 10%, 19%);
   --text-color-main: hsl(60, 10%, 19%);
   --text-color-equal: white;
 }
 [data-theme="three"]:root {
-  --background-main-one: hsl(268, 75%, 9%);
-  --background-keypad-one: hsl(268, 71%, 12%);
-  --background-display-one: hsl(268, 71%, 12%);
+  --background-main: hsl(268, 75%, 9%);
+  --background-keypad: hsl(268, 71%, 12%);
+  --background-display: hsl(268, 71%, 12%);
 
-  --background-button-one: hsl(268, 47%, 21%);
-  --button-shadow-one: hsl(290, 70%, 36%);
+  --background-button: hsl(268, 47%, 21%);
+  --button-shadow: hsl(290, 70%, 36%);
 
-  --background-reset-one: hsl(281, 89%, 26%);
-  --reset-shadow-one: hsl(285, 91%, 52%);
+  --background-reset: hsl(281, 89%, 26%);
+  --reset-shadow: hsl(285, 91%, 52%);
 
-  --background-toggle-one: hsl(176, 100%, 44%);
-  --background-equal-one: hsl(176, 100%, 44%);
-  --equal-shadow-one: hsl(177, 92%, 70%);
+  --background-toggle: hsl(176, 100%, 44%);
+  --background-equal: hsl(176, 100%, 44%);
+  --equal-shadow: hsl(177, 92%, 70%);
 
   --text-color-button: hsl(52, 100%, 62%);
   --text-color-main: hsl(52, 100%, 62%);
@@ -68,7 +68,7 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: var(--background-main-one);
+  background-color: var(--background-main);
 }
 #container {
   margin: 30px auto 0;
@@ -120,7 +120,7 @@
   width: 80px;
   border-radius: 16px;
   height: 25px;
-  background-color: var(--background-keypad-one);
+  background-color: var(--background-keypad);
   display: block;
   position: relative;
   color: transparent;
@@ -132,7 +132,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: var(--background-toggle-one);
+  background-color: var(--background-toggle);
   display: block;
   position: absolute;
 }
@@ -143,7 +143,7 @@
   transform: translateX(55px);
 }
 .display-calc {
-  background-color: var(--background-display-one);
+  background-color: var(--background-display);
   border-radius: 5px;
   padding: 26px;
   border-radius: 8px;
@@ -159,7 +159,7 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 15px;
   border-radius: 8px;
-  background-color: var(--background-keypad-one);
+  background-color: var(--background-keypad);
 }
 .buttons-calc > button {
   padding: 16px;
@@ -167,14 +167,14 @@
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
-  box-shadow: 0 0.25rem var(--button-shadow-one);
-  background-color: var(--background-button-one);
+  box-shadow: 0 0.25rem var(--button-shadow);
+  background-color: var(--background-button);
   color: var(--text-color-button);
 }
 .buttons-calc .del,
 .buttons-calc .reset {
-  background-color: var(--background-reset-one);
-  box-shadow: 0 0.25rem var(--reset-shadow-one);
+  background-color: var(--background-reset);
+  box-shadow: 0 0.25rem var(--reset-shadow);
   color: white;
 }
 .buttons-calc .del {
@@ -191,7 +191,7 @@
   font-size: 1rem;
   grid-row: 5 / -1;
   grid-column: 3 / -1;
-  background-color: var(--background-equal-one);
-  box-shadow: 0 0.25rem var(--equal-shadow-one);
+  background-color: var(--background-equal);
+  box-shadow: 0 0.25rem var(--equal-shadow);
   color: var(--text-color-equal);
 }
