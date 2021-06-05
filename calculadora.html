@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+<!DOCTYPE html>
+<html lang="pt" data-theme="one">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Rodrigorvix | Frontend Mentor | Calculator app</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 [data-theme="one"]:root {
   --background-main: hsl(222, 26%, 31%);
   --background-keypad: hsl(223, 31%, 20%);
@@ -220,3 +230,139 @@
     font-size: 1.25rem;
   }
 }
+
+  </style>
+</head>
+<body>
+  <div id="background-calc">
+    <div id="container">
+      <header class="header-calc">
+        <h1 class="title-calc">calc</h1>
+        
+        <div class="theme-box">
+          <span class="title-theme">theme</span>
+          <div>
+            <div class="theme-numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="theme-select"> 
+              <input type="radio" name="theme" id="theme-one">
+              <label for="theme-one" class="labels label-one"></label>
+              <input type="radio" name="theme" id="theme-two">  
+              <label for="theme-two" class="labels label-two"></label>             
+              <input type="radio" name="theme" id="theme-three">         
+              <label for="theme-three" class="labels label-three"></label>
+              <div class="label-select"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="display-calc">0</div>
+        <div class="buttons-calc">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="del">del</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>+</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>-</button>
+          <button>.</button>
+          <button>0</button>
+          <button>/</button>
+          <button>x</button>
+          <button class="reset">reset</button>
+          <button class="equal">=</button>
+      </div>
+      </main>  
+    </div>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/rodrigorvix">Rodrigorvix</a>.
+  </footer>
+
+  <script>
+    initCalculator();
+themeSelect();
+
+function initCalculator() {
+  const buttons = document.querySelectorAll(".buttons-calc button");
+  const display = document.querySelector(".display-calc");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      if (e.target.innerText === "DEL") {
+        display.innerHTML = deleteScreen(display.innerHTML);
+      } else if (e.target.innerText === "RESET") {
+        display.innerHTML = resetScreen(display.innerHTML);
+      } else if (e.target.innerText === "=") {
+        const result = calculator(display.innerHTML);
+        display.innerHTML =
+          result === "invalid expression" ? result : formatNumber(result);
+      } else if (display.innerHTML === "0" && display.innerHTML.length === 1) {
+        display.innerHTML = button.innerText;
+      } else {
+        display.innerHTML += button.innerText;
+      }
+    });
+  });
+}
+
+function deleteScreen(displayCurrent) {
+  if (displayCurrent.length === 1) {
+    displayCurrent = "0";
+  } else {
+    displayCurrent = displayCurrent.slice(0, -1);
+  }
+  return displayCurrent;
+}
+
+function resetScreen(displayCurrent) {
+  return "0";
+}
+
+function calculator(displayCurrent) {
+  displayCurrent = displayCurrent.replace(/[x]+/g, "*");
+  try {
+    return eval(displayCurrent);
+  } catch (error) {
+    return "invalid expression";
+  }
+}
+function formatNumber(number) {
+  if (!Number.isInteger(number)) {
+    number = number.toFixed(3);
+    number = number.toString().replace(/(^0+(?=\d))|(,?0+$)/g, "");
+  }
+  return number;
+}
+
+function themeSelect() {
+  const selectOne = document.querySelector("#theme-one");
+  const selectTwo = document.querySelector("#theme-two");
+  const selectThree = document.querySelector("#theme-three");
+  const html = document.querySelector("html");
+
+  selectOne.addEventListener("click", () => {
+    html.dataset.theme = "one";
+  });
+  selectTwo.addEventListener("click", () => {
+    html.dataset.theme = "two";
+  });
+  selectThree.addEventListener("click", () => {
+    html.dataset.theme = "three";
+  });
+}
+
+  </script>
+</body>
+</html>
