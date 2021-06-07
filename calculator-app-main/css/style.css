@@ -151,6 +151,15 @@
   text-align: end;
   margin-bottom: 1.25rem;
   color: var(--text-color-main);
+  overflow: auto;
+}
+.display-calc::-webkit-scrollbar {
+  height: 5px;
+  background-color: var(--background-toggle);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.display-calc::-webkit-scrollbar-thumb {
+  background-color: var(--background-reset);
 }
 .buttons-calc {
   padding: 1.25rem;

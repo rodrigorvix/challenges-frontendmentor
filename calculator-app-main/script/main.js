@@ -1,6 +1,3 @@
-initCalculator();
-themeSelect();
-
 function initCalculator() {
   const buttons = document.querySelectorAll(".buttons-calc button");
   const display = document.querySelector(".display-calc");
@@ -23,6 +20,37 @@ function initCalculator() {
     });
   });
 }
+
+function initCalculatorKeybord() {
+  document.addEventListener("keydown", mapKeyboard);
+}
+
+const mapKeyboard = (event) => {
+  const key = event.key;
+
+  document.getElementById(keysKeyboard[key]).click();
+};
+const keysKeyboard = {
+  0: "key0",
+  1: "key1",
+  2: "key2",
+  3: "key3",
+  4: "key4",
+  5: "key5",
+  6: "key6",
+  7: "key7",
+  8: "key8",
+  9: "key9",
+  0: "key0",
+  Delete: "keyDel",
+  Backspace: "keyDel",
+  "+": "keySum",
+  "-": "keySubstraction",
+  "*": "keyMultiplication",
+  "/": "keyBar",
+  ".": "keyDot",
+  Enter: "keyEqual",
+};
 
 function deleteScreen(displayCurrent) {
   if (displayCurrent.length === 1) {
@@ -69,3 +97,6 @@ function themeSelect() {
     html.dataset.theme = "three";
   });
 }
+initCalculator();
+initCalculatorKeybord();
+themeSelect();
