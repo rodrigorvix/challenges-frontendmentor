@@ -97,8 +97,10 @@
   font-size: 0.78rem;
   padding: 0 0.5rem;
 }
-.theme-select input {
-  display: none;
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 .labels {
   position: absolute;
@@ -205,15 +207,29 @@
   color: var(--text-color-equal);
 }
 @media (min-width: 420px) {
-  #container {
-    margin-top: 6.25rem;
-  }
+  
   .buttons-calc {
     gap: 1.25rem;
     padding: 1.875rem;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 720px) {
+  .display-calc {
+    font: 2rem;
+  }
+  .buttons-calc > button {
+    font-size: 1.75rem;
+    border-radius: 0.25rem;
+  }
+  .buttons-calc .del,
+  .buttons-calc .reset {
+    font-size: 1.25rem;
+  }
+}
+@media(min-width: 1400px) {
+   #container {
+    margin-top: 6.25rem;
+  }
   .buttons-calc {
     gap: 1.875rem;
   }
@@ -223,9 +239,5 @@
   .buttons-calc > button {
     font-size: 2rem;
     border-radius: 0.6rem;
-  }
-  .buttons-calc .del,
-  .buttons-calc .reset {
-    font-size: 1.25rem;
   }
 }
