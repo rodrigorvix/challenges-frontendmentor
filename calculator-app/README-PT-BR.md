@@ -14,9 +14,8 @@
  <a href="#👏agradecimentos">Agradecimentos</a> 
 </p>
 <p align="center">
-<a href="https://www.linkedin.com/in/rodrigovitoriense">
+
   <img src="https://img.shields.io/static/v1?label=Developer&message=Rodrigo Vitoriense&color=7159c1&style=for-the-badge&logo=">
-</a>
 <img src="https://img.shields.io/static/v1?label=LICENSE&message=MIT&color=7159c1&style=for-the-badge&logo="/>
 </p><br>
 
