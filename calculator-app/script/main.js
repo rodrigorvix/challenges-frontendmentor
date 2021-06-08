@@ -7,30 +7,30 @@ function initCalculator() {
       const buttonTarget = e.target.innerText;
       if (buttonTarget === "DEL") {
         display.innerHTML = deleteScreen(display.innerHTML);
-
       } else if (buttonTarget === "RESET") {
         display.innerHTML = resetScreen(display.innerHTML);
-
       } else if (buttonTarget === "=") {
         const result = calculator(display.innerHTML);
-        display.innerHTML = result === "invalid expression" ? result : formatNumber(result);
-
+        display.innerHTML =
+          result === "invalid expression" ? result : formatNumber(result);
       } else if (display.innerHTML === "0" && display.innerHTML.length === 1) {
         display.innerHTML = button.innerText;
-
       } else {
         display.innerHTML += button.innerText;
       }
     });
   });
 }
+
 function initCalculatorKeybord() {
   document.addEventListener("keydown", mapKeyboard);
 }
-const mapKeyboard = event => {
+const mapKeyboard = (event) => {
   const key = event.key;
-  document.getElementById(keysKeyboard[key]).click();
-}
+  if (keysKeyboard.hasOwnProperty(key)) {
+    document.getElementById(keysKeyboard[key]).click();
+  }
+};
 const keysKeyboard = {
   0: "key0",
   1: "key1",
@@ -51,7 +51,7 @@ const keysKeyboard = {
   "/": "keyBar",
   ".": "keyDot",
   Enter: "keyEqual",
-}
+};
 function deleteScreen(displayCurrent) {
   if (displayCurrent.length === 1) {
     displayCurrent = "0";
