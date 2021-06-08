@@ -2,6 +2,8 @@
     <img src="./images/calculator-icon.png" alt="My cool logo"/>
     <a href="https://rodrigorvix.github.io/challenges-frontendmentor/calculator-app">CALCULATOR APP</a>
 </h1>
+<h2 style='text-align:right'><a href=./README-PT-BR.md><span align="rigth">🇧🇷</span></a></h2>
+
 <p align="center">
  <a href="#📷preview">Preview</a> •
  <a href="#ℹ️about">About</a> • 
@@ -11,6 +13,7 @@
  <a href="#👨‍💻author">Author</a> • 
  <a href="#👏acknowledgments">Acknowledgments</a> 
 </p>
+
 <p align="center">
 <a href="https://www.linkedin.com/in/rodrigovitoriense">
   <img src="https://img.shields.io/static/v1?label=Developer&message=Rodrigo Vitoriense&color=7159c1&style=for-the-badge&logo=">
@@ -20,7 +23,7 @@
 
 # 📷Preview
 
-gif
+<img src="./images/Calculator-app-preview.gif">
 <br><br>
 
 # ℹ️About
@@ -28,9 +31,9 @@ gif
 This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 In this project, the users should be able to:
 
-- See the size of the elements adjust based on their device's screen size
-- Perform mathmatical operations like addition, subtraction, multiplication, and division
-- Adjust the color theme based on their preference
+- See the size of the elements adjust based on their device's screen size;
+- Perform mathmatical operations like addition, subtraction, multiplication, and division;
+- Adjust the color theme based on their preference.
   <br><br>
 
 # 🔗Links
@@ -53,10 +56,10 @@ The following tools were used in the construction of the project:
 
 In this project, I had as main lessons the use of the following resources:
 
-- creation of the label selector
-- CSS Grid layout buttons
-- use of [HTMLElement.dataset](https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLOrForeignElement/dataset) property
-- code reuse
+- creation of theme selector;
+- build buttons using CSS Grid;
+- use of [HTMLElement.dataset](https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLOrForeignElement/dataset) property;
+- code reuse.
   <br><br>
 
 # 👨‍💻Author
