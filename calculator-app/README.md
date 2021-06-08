@@ -10,7 +10,11 @@
  <a href="#what-i-learned">What I learned</a> • 
  <a href="#author">Author</a> • 
  <a href="#acknowledgments">Acknowledgments</a> 
-</p><br><br>
+</p>
+<p align="center">
+<a href="https://www.linkedin.com/in/rodrigovitoriense"><img src="https://img.shields.io/static/v1?label=Developer&message=Rodrigo Vitoriense&color=7159c1&style=for-the-badge&logo="/></a>
+<img src="https://img.shields.io/static/v1?label=LICENSE&message=MIT&color=7159c1&style=for-the-badge&logo="/>
+</p><br>
 
 # Preview
 
@@ -32,7 +36,7 @@ In this project, the users should be able to:
 - Solution URL: [Calculator App](https://rodrigorvix.github.io/challenges-frontendmentor/calculator-app/)
   <br><br>
 
-# 🛠 Technologies
+# Technologies
 
 The following tools were used in the construction of the project:
 
@@ -48,15 +52,15 @@ The following tools were used in the construction of the project:
 In this project, I had as main lessons the use of the following resources:
 
 - creation of the label selector
-- CSS grid layout buttons
+- CSS Grid layout buttons
 - use of [HTMLElement.dataset](https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLOrForeignElement/dataset) property
 - code reuse
   <br><br>
 
 # Author
 
-- Linkedin - [Profile Linkedin](https://www.linkedin.com/in/rodrigovitoriense/)
-- Frontend Mentor - [@rodrigorvix](https://www.frontendmentor.io/profile/rodrigorvix)
+- [Linkedin](https://www.linkedin.com/in/rodrigovitoriense/)
+- [Projects Frontend Mentor](https://www.frontendmentor.io/profile/rodrigorvix)
   <br><br>
 
 ## Acknowledgments
