@@ -3,13 +3,13 @@
     <a href="https://rodrigorvix.github.io/challenges-frontendmentor/calculator-app">CALCULATOR APP</a>
 </h1>
 <p align="center">
- <a href="#preview">Preview</a> •
- <a href="#about">About</a> • 
- <a href="#links">Links</a> • 
- <a href="#technologies">Technologies</a> • 
- <a href="#what-i-learned">What I learned</a> • 
- <a href="#author">Author</a> • 
- <a href="#acknowledgments">Acknowledgments</a> 
+ <a href="#📷preview">Preview</a> •
+ <a href="#ℹ️about">About</a> • 
+ <a href="#🔗links">Links</a> • 
+ <a href="#🛠technologies">Technologies</a> • 
+ <a href="#📚what-i-learned">What I learned</a> • 
+ <a href="#👨‍💻author">Author</a> • 
+ <a href="#👏acknowledgments">Acknowledgments</a> 
 </p>
 <p align="center">
 <a href="https://www.linkedin.com/in/rodrigovitoriense">
@@ -18,12 +18,12 @@
 <img src="https://img.shields.io/static/v1?label=LICENSE&message=MIT&color=7159c1&style=for-the-badge&logo="/>
 </p><br>
 
-# Preview
+# 📷Preview
 
 gif
 <br><br>
 
-# About
+# ℹ️About
 
 This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 In this project, the users should be able to:
@@ -33,12 +33,12 @@ In this project, the users should be able to:
 - Adjust the color theme based on their preference
   <br><br>
 
-# Links
+# 🔗Links
 
 - Solution URL: [Calculator App](https://rodrigorvix.github.io/challenges-frontendmentor/calculator-app/)
   <br><br>
 
-# Technologies
+# 🛠Technologies
 
 The following tools were used in the construction of the project:
 
@@ -49,7 +49,7 @@ The following tools were used in the construction of the project:
 - [CSS Grid](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout)
   <br><br>
 
-# What I learned
+# 📚What I learned
 
 In this project, I had as main lessons the use of the following resources:
 
@@ -59,12 +59,12 @@ In this project, I had as main lessons the use of the following resources:
 - code reuse
   <br><br>
 
-# Author
+# 👨‍💻Author
 
 - [Linkedin](https://www.linkedin.com/in/rodrigovitoriense/)
 - [Projects Frontend Mentor](https://www.frontendmentor.io/profile/rodrigorvix)
   <br><br>
 
-## Acknowledgments
+# 👏Acknowledgments
 
 Thanks to the Frontend Mentor (https://www.frontendmentor.io/) for making the design available for the challenge.
