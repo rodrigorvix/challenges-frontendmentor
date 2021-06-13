@@ -2,7 +2,7 @@
     <img src="./images-readme/favicon-32x32.png" alt="My cool logo"/>
     <a href="https://rodrigorvix.github.io/challenges-frontendmentor/">DESAFIOS - FRONTEND MENTOR</a>
 </h1>
-<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/challenges-frontentmentor/blob/main/README.md><span align="rigth">🇺🇸</span></a></h2>
+<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/challenges-frontendmentor/blob/main/README.md><span align="rigth">🇺🇸</span></a></h2>
 
 <p align="center">
  <a href="#📷-demonstração">Demonstração</a> •
