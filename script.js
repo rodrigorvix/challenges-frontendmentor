@@ -37,13 +37,13 @@ projects.forEach(({ name, githubRepository }, i) => {
   const listItem = document.createElement("li");
 
   listItem.innerHTML = `
-		<a href="/challenges-frontendmentor/${name}/" class=project-name>
+		<a href="/challenges-frontendmentor/${name}/" class=project-name target="_blank"> 
 			<img src="./${name}/design/desktop-design.jpg" alt="${name}" />
 			<p>${i + 1}. ${formatProjectName(name)}</p>
 		</a>
 
 		<div class="links-container">
-			<a href="challenges-frontendmentor/${name}/index.html" class="view" target="_blank">
+			<a href="/challenges-frontendmentor/${name}/" class="view" target="_blank">
 				<i class="far fa-eye"></i>
 			</a>
 			<a href="${githubRepository}" class="github" target="_blank">
