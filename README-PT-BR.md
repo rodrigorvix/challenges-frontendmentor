@@ -32,8 +32,6 @@ Este é um repositório para armazenar minhas soluções dos desafios do Fronten
 
 # 🔗 Links das soluções
 
-<<<<<<< HEAD
-
 - Link principal: https://rodrigorvix.github.io/challenges-frontendmentor/
   <br><br>
 - [1. Single Price Grid Component](https://rodrigorvix.github.io/challenges-frontendmentor/single-price-grid-component/)
@@ -43,7 +41,7 @@ Este é um repositório para armazenar minhas soluções dos desafios do Fronten
 - [5. Intro Component With Signup Form](https://rodrigorvix.github.io/challenges-frontendmentor/intro-component-with-signup-form/)
 - [6. Pricing Component With Toggle](https://rodrigorvix.github.io/challenges-frontendmentor/pricing-component-with-toggle/)
 
-# <br><br>
+<br><br>
 
 # 🛠 Tecnologias
 

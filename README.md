@@ -32,8 +32,6 @@ This is a repository to store my solutions from Frontend Mentor challenges. Fron
 
 # 🔗 Links for solutions
 
-<<<<<<< HEAD
-
 - Main link: https://rodrigorvix.github.io/challenges-frontendmentor/
   <br><br>
 - [1. Single Price Grid Component](https://rodrigorvix.github.io/challenges-frontendmentor/single-price-grid-component/)
