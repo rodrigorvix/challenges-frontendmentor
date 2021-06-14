@@ -2,7 +2,7 @@
     <img src="./images-readme/favicon-32x32.png" alt="My cool logo"/>
     <a href="https://rodrigorvix.github.io/challenges-frontendmentor/">CHALLENGES - FRONTEND MENTOR</a>
 </h1>
-<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/challenges-frontentmentor/blob/main/README-PT-BR.md><span align="rigth">🇧🇷</span></a></h2>
+<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/challenges-frontendmentor/blob/main/README-PT-BR.md><span align="rigth">🇧🇷</span></a></h2>
 
 <p align="center">
  <a href="#📷-preview">Preview</a> •
@@ -31,6 +31,8 @@ This is a repository to store my solutions from Frontend Mentor challenges. Fron
 <br><br>
 
 # 🔗 Links for solutions
+
+<<<<<<< HEAD
 
 - Main link: https://rodrigorvix.github.io/challenges-frontendmentor/
   <br><br>

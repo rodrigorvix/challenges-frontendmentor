@@ -2,7 +2,7 @@
     <img src="./images-readme/favicon-32x32.png" alt="My cool logo"/>
     <a href="https://rodrigorvix.github.io/challenges-frontendmentor/">DESAFIOS - FRONTEND MENTOR</a>
 </h1>
-<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/challenges-frontentmentor/blob/main/README.md><span align="rigth">🇺🇸</span></a></h2>
+<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/challenges-frontendmentor/blob/main/README.md><span align="rigth">🇺🇸</span></a></h2>
 
 <p align="center">
  <a href="#📷-demonstração">Demonstração</a> •
@@ -32,6 +32,8 @@ Este é um repositório para armazenar minhas soluções dos desafios do Fronten
 
 # 🔗 Links das soluções
 
+<<<<<<< HEAD
+
 - Link principal: https://rodrigorvix.github.io/challenges-frontendmentor/
   <br><br>
 - [1. Single Price Grid Component](https://rodrigorvix.github.io/challenges-frontendmentor/single-price-grid-component/)
@@ -41,7 +43,7 @@ Este é um repositório para armazenar minhas soluções dos desafios do Fronten
 - [5. Intro Component With Signup Form](https://rodrigorvix.github.io/challenges-frontendmentor/intro-component-with-signup-form/)
 - [6. Pricing Component With Toggle](https://rodrigorvix.github.io/challenges-frontendmentor/pricing-component-with-toggle/)
 
-<br><br>
+# <br><br>
 
 # 🛠 Tecnologias
 
