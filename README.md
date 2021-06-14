@@ -40,10 +40,8 @@ This is a repository to store my solutions from Frontend Mentor challenges. Fron
 - [4. Base Apparel Coming Soon](https://rodrigorvix.github.io/challenges-frontendmentor/base-apparel-coming-soon/)
 - [5. Intro Component With Signup Form](https://rodrigorvix.github.io/challenges-frontendmentor/intro-component-with-signup-form/)
 - [6. Pricing Component With Toggle](https://rodrigorvix.github.io/challenges-frontendmentor/pricing-component-with-toggle/)
-
-<br><br>
-
-# 🛠 Technologies
+  <br><br>
+  # 🛠 Technologies
 
 The following technologies were used in the construction of the projects in this repository:
 

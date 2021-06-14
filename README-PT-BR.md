@@ -40,8 +40,7 @@ Este é um repositório para armazenar minhas soluções dos desafios do Fronten
 - [4. Base Apparel Coming Soon](https://rodrigorvix.github.io/challenges-frontendmentor/base-apparel-coming-soon/)
 - [5. Intro Component With Signup Form](https://rodrigorvix.github.io/challenges-frontendmentor/intro-component-with-signup-form/)
 - [6. Pricing Component With Toggle](https://rodrigorvix.github.io/challenges-frontendmentor/pricing-component-with-toggle/)
-
-<br><br>
+  <br><br>
 
 # 🛠 Tecnologias
 
