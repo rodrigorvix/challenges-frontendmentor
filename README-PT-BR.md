@@ -32,6 +32,8 @@ Este é um repositório para armazenar minhas soluções dos desafios do Fronten
 
 # 🔗 Links das soluções
 
+Link principal: https://rodrigorvix.github.io/challenges-frontendmentor/
+
 1. Single Price Grid Component : https://rodrigorvix.github.io/challenges-frontendmentor/single-price-grid-component/
 2. Four Card Feature Section: https://rodrigorvix.github.io/challenges-frontendmentor/four-card-feature-section/
 3. Huddle Landing Page With Single Introductory Section: https://rodrigorvix.github.io/challenges-frontendmentor/huddle-landing-page-with-single-introductory-section/
